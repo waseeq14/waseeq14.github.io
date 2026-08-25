@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Waseeq Ur Rehman</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Waseeq Ur Rehman</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Afl&#43;&#43;</title>
+      <link>http://localhost:1313/tags/afl&#43;&#43;/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/afl&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devsecops</title>
+      <link>http://localhost:1313/tags/devsecops/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/devsecops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Django</title>
+      <link>http://localhost:1313/tags/django/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/django/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fuzzing</title>
+      <link>http://localhost:1313/tags/fuzzing/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fuzzing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fyp</title>
+      <link>http://localhost:1313/tags/fyp/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fyp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Klee</title>
+      <link>http://localhost:1313/tags/klee/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/klee/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Llm</title>
+      <link>http://localhost:1313/tags/llm/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React</title>
+      <link>http://localhost:1313/tags/react/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/react/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/tags/research/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/research/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sast</title>
+      <link>http://localhost:1313/tags/sast/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sast/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Semgrep</title>
+      <link>http://localhost:1313/tags/semgrep/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/semgrep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Symbolic-Execution</title>
+      <link>http://localhost:1313/tags/symbolic-execution/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/symbolic-execution/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Android</title>
+      <link>http://localhost:1313/tags/android/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/android/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Appsec</title>
+      <link>http://localhost:1313/tags/appsec/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/appsec/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aws</title>
+      <link>http://localhost:1313/tags/aws/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ci-Cd</title>
+      <link>http://localhost:1313/tags/ci-cd/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ci-cd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Defectdojo</title>
+      <link>http://localhost:1313/tags/defectdojo/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/defectdojo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jenkins</title>
+      <link>http://localhost:1313/tags/jenkins/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/jenkins/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobsf</title>
+      <link>http://localhost:1313/tags/mobsf/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mobsf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sonarqube</title>
+      <link>http://localhost:1313/tags/sonarqube/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sonarqube/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trivy</title>
+      <link>http://localhost:1313/tags/trivy/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/trivy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Broken-Access-Control</title>
+      <link>http://localhost:1313/tags/broken-access-control/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/broken-access-control/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Firebase</title>
+      <link>http://localhost:1313/tags/firebase/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/firebase/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Firestore</title>
+      <link>http://localhost:1313/tags/firestore/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/firestore/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frida</title>
+      <link>http://localhost:1313/tags/frida/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/frida/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hooking</title>
+      <link>http://localhost:1313/tags/hooking/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hooking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ios</title>
+      <link>http://localhost:1313/tags/ios/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile-Hacking-Labs</title>
+      <link>http://localhost:1313/tags/mobile-hacking-labs/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mobile-hacking-labs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Notely-Ai</title>
+      <link>http://localhost:1313/tags/notely-ai/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/notely-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Objc-Runtime</title>
+      <link>http://localhost:1313/tags/objc-runtime/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/objc-runtime/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deeplink</title>
+      <link>http://localhost:1313/tags/deeplink/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/deeplink/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flipcoin-Wallet</title>
+      <link>http://localhost:1313/tags/flipcoin-wallet/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/flipcoin-wallet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Objection</title>
+      <link>http://localhost:1313/tags/objection/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/objection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sqli</title>
+      <link>http://localhost:1313/tags/sqli/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sqli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sqlite</title>
+      <link>http://localhost:1313/tags/sqlite/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sqlite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Union-Injection</title>
+      <link>http://localhost:1313/tags/union-injection/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/union-injection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anti-Reversing</title>
+      <link>http://localhost:1313/tags/anti-reversing/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/anti-reversing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Captain-Nohook</title>
+      <link>http://localhost:1313/tags/captain-nohook/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/captain-nohook/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Radare2</title>
+      <link>http://localhost:1313/tags/radare2/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/radare2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rasp</title>
+      <link>http://localhost:1313/tags/rasp/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rasp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jailbreak-Bypass</title>
+      <link>http://localhost:1313/tags/jailbreak-bypass/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/jailbreak-bypass/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>No-Escape</title>
+      <link>http://localhost:1313/tags/no-escape/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/no-escape/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foodstore</title>
+      <link>http://localhost:1313/tags/foodstore/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/foodstore/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Static-Analysis</title>
+      <link>http://localhost:1313/tags/static-analysis/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/static-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aes</title>
+      <link>http://localhost:1313/tags/aes/</link>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Broadcast-Receiver</title>
+      <link>http://localhost:1313/tags/broadcast-receiver/</link>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/broadcast-receiver/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crypto</title>
+      <link>http://localhost:1313/tags/crypto/</link>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/crypto/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iot-Connect</title>
+      <link>http://localhost:1313/tags/iot-connect/</link>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/iot-connect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Config-Editor</title>
+      <link>http://localhost:1313/tags/config-editor/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/config-editor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deserialization</title>
+      <link>http://localhost:1313/tags/deserialization/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/deserialization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jadx</title>
+      <link>http://localhost:1313/tags/jadx/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/jadx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rce</title>
+      <link>http://localhost:1313/tags/rce/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rce/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Snakeyaml</title>
+      <link>http://localhost:1313/tags/snakeyaml/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/snakeyaml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Buffer-Overflow</title>
+      <link>http://localhost:1313/tags/buffer-overflow/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/buffer-overflow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exploitation</title>
+      <link>http://localhost:1313/tags/exploitation/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/exploitation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ghidra</title>
+      <link>http://localhost:1313/tags/ghidra/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ghidra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jni</title>
+      <link>http://localhost:1313/tags/jni/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/jni/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Native</title>
+      <link>http://localhost:1313/tags/native/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/native/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Note-Keeper</title>
+      <link>http://localhost:1313/tags/note-keeper/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/note-keeper/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

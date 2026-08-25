@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Foodstore on Waseeq Ur Rehman</title>
+    <link>http://localhost:1313/tags/foodstore/</link>
+    <description>Recent content in Foodstore on Waseeq Ur Rehman</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/foodstore/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploiting SQLite Injection via Username Field Concatenation on Android</title>
+      <link>http://localhost:1313/posts/android-foodstore-sqli/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-foodstore-sqli/</guid>
+      <description>Exploiting SQL injection in an Android app&amp;#39;s signup function via username field concatenation to register a Pro account with 10,000 credits.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mobile-Hacking-Labs on Waseeq Ur Rehman</title>
+    <link>http://localhost:1313/tags/mobile-hacking-labs/</link>
+    <description>Recent content in Mobile-Hacking-Labs on Waseeq Ur Rehman</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mobile-hacking-labs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Client-Side Access Control is Not Access Control: Firestore Query Tampering via Frida</title>
+      <link>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</guid>
+      <description>Bypassing Frida detection in Notely AI and tampering with Firestore queries at runtime via ObjC method hooking to access archived admin notes.</description>
+    </item>
+    <item>
+      <title>Chaining Deep Link Injection with SQLi to Leak Sensitive Data from an iOS App</title>
+      <link>http://localhost:1313/posts/ios-flipcoin-wallet-deeplink-sqli/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ios-flipcoin-wallet-deeplink-sqli/</guid>
+      <description>Chaining deep link URL scheme handling with SQL injection in an iOS crypto wallet app to extract another user&amp;#39;s recovery key via a UNION-based query.</description>
+    </item>
+    <item>
+      <title>Defeating Multi-Layer Anti-Reversing Protections on iOS with Static Analysis and Frida</title>
+      <link>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</guid>
+      <description>Bypassing a multi-layered RASP/compliance check system in Captain NoHook using static analysis with r2/nm to locate functions, Frida to replace them, and Objection to find the hidden flag in memory.</description>
+    </item>
+    <item>
+      <title>One Hook to Bypass All: Defeating iOS Jailbreak Detection with Frida</title>
+      <link>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</guid>
+      <description>Bypassing iOS jailbreak detection in No Escape by hooking the root isJailbroken() export with Frida, then using Objection to find the flag in memory.</description>
+    </item>
+    <item>
+      <title>Exploiting SQLite Injection via Username Field Concatenation on Android</title>
+      <link>http://localhost:1313/posts/android-foodstore-sqli/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-foodstore-sqli/</guid>
+      <description>Exploiting SQL injection in an Android app&amp;#39;s signup function via username field concatenation to register a Pro account with 10,000 credits.</description>
+    </item>
+    <item>
+      <title>Two Ways to Break a Hardcoded PIN: AES Bruteforce vs Frida Hooking</title>
+      <link>http://localhost:1313/posts/android-iot-connect/</link>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-iot-connect/</guid>
+      <description>Two approaches to bypass a PIN check in an IoT Android app: offline AES bruteforce to recover the key (345), and runtime Frida hook to skip the check entirely.</description>
+    </item>
+    <item>
+      <title>Unsafe YAML Deserialization to RCE on Android</title>
+      <link>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</guid>
+      <description>Exploiting an unsafe SnakeYAML deserialization flow chained with a legacy command execution utility to achieve RCE on an Android app.</description>
+    </item>
+    <item>
+      <title>Overflowing a JNI Buffer to Hijack system() in an Android Native Library</title>
+      <link>http://localhost:1313/posts/android-note-keeper-bof/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-note-keeper-bof/</guid>
+      <description>Exploiting a native stack buffer overflow in Note Keeper&amp;#39;s JNI code to overwrite a command buffer adjacent to the overflow target, achieving arbitrary command execution via system().</description>
+    </item>
+  </channel>
+</rss>

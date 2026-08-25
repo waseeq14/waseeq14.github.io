@@ -1,0 +1,326 @@
+/* ── JetBrains Mono — terminal/hacker aesthetic ─────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+*,
+body,
+h1, h2, h3, h4, h5, h6,
+p, a, li, td, th, blockquote,
+code, pre, kbd,
+input, button, textarea, select,
+nav, header, footer {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* ── Purple accent palette ─────────────────────────────────────────── */
+:root {
+  --purple:        #8b5cf6;
+  --purple-light:  #a78bfa;
+  --purple-dark:   #6d28d9;
+  --purple-glow:   rgba(139, 92, 246, 0.25);
+  --transition:    0.2s ease;
+}
+
+/* ── Headings ───────────────────────────────────────────────────────── */
+h1.post-title,
+.entry-header h2,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  color: var(--purple-light);
+}
+
+/* ── Blaugrana text ─────────────────────────────────────────────────── */
+.blaugrana {
+  background: linear-gradient(to right, #004D98 50%, #A50044 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* ── About page ─────────────────────────────────────────────────────── */
+:root {
+  --violet: #c792ea;
+}
+
+.about-page {
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+.about-page h2,
+.about-page h3 {
+  color: var(--violet) !important;
+}
+
+.about-page strong {
+  color: var(--violet);
+}
+
+.about-page a {
+  color: var(--violet) !important;
+  text-decoration-color: transparent;
+  transition: text-decoration-color var(--transition);
+}
+
+.about-page a:hover {
+  text-decoration-color: var(--violet);
+}
+
+.about-page ul {
+  margin: 0.4rem 0 0.8rem;
+  padding-left: 1.4rem;
+}
+
+.about-page ul li {
+  margin-bottom: 0.25rem;
+}
+
+.accent-section {
+  border-left: 3px solid var(--violet);
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.accent-section ul {
+  margin: 0.3rem 0;
+}
+
+.accent-section ul li {
+  margin-bottom: 0.2rem;
+}
+
+/* ── Profile avatar — bigger, crisp circle, purple ring ────────────── */
+.profile img {
+  width:         160px !important;
+  height:        160px !important;
+  border-radius: 50% !important;
+  object-fit:    cover;
+  object-position: center top;
+  border:        3px solid var(--purple);
+  box-shadow:    0 0 0 5px var(--purple-glow);
+  transition:    box-shadow var(--transition), transform var(--transition);
+}
+
+.profile img:hover {
+  box-shadow:  0 0 0 7px var(--purple-glow), 0 0 24px var(--purple-glow);
+  transform:   scale(1.04);
+}
+
+/* ── >whoami terminal button ────────────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.button-whoami {
+  background:     transparent !important;
+  border:         1px solid var(--purple) !important;
+  border-radius:  0 !important;
+  color:          var(--purple-light) !important;
+  letter-spacing: 0.02em;
+}
+
+.button-whoami:hover {
+  background:  var(--purple) !important;
+  color:       #fff !important;
+  box-shadow:  0 0 12px var(--purple-glow) !important;
+  transform:   none !important;
+}
+
+.button-whoami .button-inner::after {
+  content:     "▋";
+  color:       var(--purple-light);
+  animation:   blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+.profile .buttons:not(.buttons-whoami) a.button {
+  background:     transparent !important;
+  border:         1px solid var(--purple) !important;
+  border-radius:  0 !important;
+  color:          var(--purple-light) !important;
+  letter-spacing: 0.02em;
+}
+
+.profile .buttons:not(.buttons-whoami) a.button:hover {
+  background:  var(--purple) !important;
+  color:       #fff !important;
+  box-shadow:  0 0 12px var(--purple-glow) !important;
+  transform:   none !important;
+}
+
+.profile .buttons:not(.buttons-whoami) a.button .button-inner::after {
+  content:     "▋";
+  color:       var(--purple-light);
+  animation:   blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+/* ── Profile buttons ────────────────────────────────────────────────── */
+.profile .buttons a {
+  border:     1px solid var(--purple);
+  color:      var(--purple-light);
+  transition: background var(--transition), color var(--transition),
+              box-shadow var(--transition), transform var(--transition);
+}
+
+.profile .buttons a:hover {
+  background:  var(--purple);
+  color:       #fff;
+  box-shadow:  0 4px 18px var(--purple-glow);
+  transform:   translateY(-2px);
+}
+
+/* ── Nav links ──────────────────────────────────────────────────────── */
+#menu a {
+  position:   relative;
+  transition: color var(--transition);
+}
+
+#menu a::after {
+  content:          "";
+  position:         absolute;
+  left:             0;
+  bottom:           -3px;
+  width:            0;
+  height:           2px;
+  background:       var(--purple);
+  border-radius:    2px;
+  transition:       width var(--transition);
+}
+
+#menu a:hover,
+#menu a.active {
+  color: var(--purple-light);
+}
+
+#menu a:hover::after,
+#menu a.active::after {
+  width: 100%;
+}
+
+/* ── Post / entry cards ─────────────────────────────────────────────── */
+.post-entry {
+  border-radius: 8px;
+  transition:    transform var(--transition), box-shadow var(--transition),
+                 border-color var(--transition);
+  border:        1px solid transparent;
+}
+
+.post-entry:hover {
+  transform:    translateY(-3px);
+  box-shadow:   0 8px 28px var(--purple-glow);
+  border-color: var(--purple-dark);
+}
+
+.post-entry .entry-hint-parent:hover {
+  color: var(--purple-light);
+}
+
+/* ── Post title links ───────────────────────────────────────────────── */
+.post-title a,
+h1.post-title,
+.entry-header h2 a {
+  transition: color var(--transition);
+}
+
+.entry-header h2 a:hover {
+  color: var(--purple-light);
+}
+
+/* ── Tags / chips ───────────────────────────────────────────────────── */
+.post-tags a,
+.terms-tags a {
+  border:     1px solid var(--purple-dark);
+  color:      var(--purple-light);
+  transition: background var(--transition), color var(--transition),
+              transform var(--transition);
+}
+
+.post-tags a:hover,
+.terms-tags a:hover {
+  background: var(--purple);
+  color:      #fff;
+  transform:  translateY(-1px);
+}
+
+/* ── Inline links in content ────────────────────────────────────────── */
+.post-content a {
+  color:      var(--purple-light);
+  text-decoration-color: transparent;
+  transition: color var(--transition), text-decoration-color var(--transition);
+}
+
+.post-content a:hover {
+  color:                  var(--purple);
+  text-decoration-color:  var(--purple);
+}
+
+/* ── Code blocks — purple left border accent ────────────────────────── */
+.post-content pre {
+  border-left: 3px solid var(--purple-dark);
+}
+
+.post-content code {
+  color: var(--purple-light);
+}
+
+/* ── Social icons ───────────────────────────────────────────────────── */
+.social-icons a {
+  transition: color var(--transition), transform var(--transition);
+}
+
+.social-icons a svg {
+  transition: stroke var(--transition), color var(--transition);
+}
+
+.social-icons a:hover {
+  color:     var(--purple-light) !important;
+  transform: translateY(-3px);
+}
+
+.social-icons a:hover svg {
+  stroke: var(--purple-light) !important;
+  color:  var(--purple-light) !important;
+}
+
+/* ── Site header label ──────────────────────────────────────────────── */
+.logo a {
+  transition: color var(--transition);
+}
+
+.logo a:hover {
+  color: var(--purple-light) !important;
+}
+
+/* ── Breadcrumbs ────────────────────────────────────────────────────── */
+.breadcrumbs a:hover {
+  color: var(--purple-light);
+}
+
+/* ── Pagination ─────────────────────────────────────────────────────── */
+.pagination .page-item a:hover {
+  border-color: var(--purple);
+  color:        var(--purple-light);
+}
+
+/* ── ToC links ──────────────────────────────────────────────────────── */
+#TableOfContents a {
+  transition: color var(--transition), padding-left var(--transition);
+}
+
+#TableOfContents a:hover {
+  color:        var(--purple-light);
+  padding-left: 4px;
+}
+
+/* ── Search input focus ─────────────────────────────────────────────── */
+#searchbox input:focus {
+  border-color: var(--purple);
+  box-shadow:   0 0 0 2px var(--purple-glow);
+  outline:      none;
+}

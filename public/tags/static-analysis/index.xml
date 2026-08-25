@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Static-Analysis on Waseeq Ur Rehman</title>
+    <link>http://localhost:1313/tags/static-analysis/</link>
+    <description>Recent content in Static-Analysis on Waseeq Ur Rehman</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/static-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploiting SQLite Injection via Username Field Concatenation on Android</title>
+      <link>http://localhost:1313/posts/android-foodstore-sqli/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-foodstore-sqli/</guid>
+      <description>Exploiting SQL injection in an Android app&amp;#39;s signup function via username field concatenation to register a Pro account with 10,000 credits.</description>
+    </item>
+    <item>
+      <title>Unsafe YAML Deserialization to RCE on Android</title>
+      <link>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</guid>
+      <description>Exploiting an unsafe SnakeYAML deserialization flow chained with a legacy command execution utility to achieve RCE on an Android app.</description>
+    </item>
+  </channel>
+</rss>

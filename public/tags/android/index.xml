@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Android on Waseeq Ur Rehman</title>
+    <link>http://localhost:1313/tags/android/</link>
+    <description>Recent content in Android on Waseeq Ur Rehman</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automated DevSecOps Pipeline for Android Applications</title>
+      <link>http://localhost:1313/projects/android-devsecops-pipeline/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/android-devsecops-pipeline/</guid>
+      <description>A fully automated Android security pipeline built on Jenkins across two AWS EC2 instances, integrating Semgrep, Gitleaks, SonarQube, Trivy, MobSF, and DefectDojo to cover every security layer from source to APK.</description>
+    </item>
+    <item>
+      <title>I Built a Security Pipeline That Scans Every Android Build Automatically</title>
+      <link>http://localhost:1313/posts/android-devsecops-pipeline/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-devsecops-pipeline/</guid>
+      <description>A walkthrough of why I built an automated Android DevSecOps pipeline and what it covers - from SAST to APK-level mobile analysis, all wired into a single vulnerability dashboard.</description>
+    </item>
+    <item>
+      <title>Exploiting SQLite Injection via Username Field Concatenation on Android</title>
+      <link>http://localhost:1313/posts/android-foodstore-sqli/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-foodstore-sqli/</guid>
+      <description>Exploiting SQL injection in an Android app&amp;#39;s signup function via username field concatenation to register a Pro account with 10,000 credits.</description>
+    </item>
+    <item>
+      <title>Two Ways to Break a Hardcoded PIN: AES Bruteforce vs Frida Hooking</title>
+      <link>http://localhost:1313/posts/android-iot-connect/</link>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-iot-connect/</guid>
+      <description>Two approaches to bypass a PIN check in an IoT Android app: offline AES bruteforce to recover the key (345), and runtime Frida hook to skip the check entirely.</description>
+    </item>
+    <item>
+      <title>Unsafe YAML Deserialization to RCE on Android</title>
+      <link>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</guid>
+      <description>Exploiting an unsafe SnakeYAML deserialization flow chained with a legacy command execution utility to achieve RCE on an Android app.</description>
+    </item>
+    <item>
+      <title>Overflowing a JNI Buffer to Hijack system() in an Android Native Library</title>
+      <link>http://localhost:1313/posts/android-note-keeper-bof/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-note-keeper-bof/</guid>
+      <description>Exploiting a native stack buffer overflow in Note Keeper&amp;#39;s JNI code to overwrite a command buffer adjacent to the overflow target, achieving arbitrary command execution via system().</description>
+    </item>
+  </channel>
+</rss>

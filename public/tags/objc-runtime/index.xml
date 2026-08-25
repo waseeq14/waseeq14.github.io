@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Objc-Runtime on Waseeq Ur Rehman</title>
+    <link>http://localhost:1313/tags/objc-runtime/</link>
+    <description>Recent content in Objc-Runtime on Waseeq Ur Rehman</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/objc-runtime/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Client-Side Access Control is Not Access Control: Firestore Query Tampering via Frida</title>
+      <link>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</guid>
+      <description>Bypassing Frida detection in Notely AI and tampering with Firestore queries at runtime via ObjC method hooking to access archived admin notes.</description>
+    </item>
+  </channel>
+</rss>

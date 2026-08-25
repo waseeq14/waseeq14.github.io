@@ -1,0 +1,114 @@
+baseURL: "https://waseeq14.github.io/"
+title: "Waseeq Ur Rehman"
+paginate: 10
+theme: PaperMod
+languageCode: en-us
+
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: Waseeq Ur Rehman
+  description: "Security professional - penetration tester, researcher, and writer."
+  author: Waseeq Ur Rehman
+  defaultTheme: dark
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  showtoc: true
+  tocopen: false
+
+  assets:
+    favicon: "/favicon.ico"
+
+  label:
+    text: "~/waseeq"
+
+  profileMode:
+    enabled: true
+    title: "Waseeq Ur Rehman"
+    subtitle: "Security professional. I break stuff, sometimes fix it, and occasionally write about both."
+    imageUrl: "/images/avatar.png"
+    imageWidth: 160
+    imageHeight: 160
+    imageTitle: avatar
+    buttons:
+      - name: ">whoami"
+        url: about
+      - name: "cd Blog/"
+        url: posts
+      - name: "cd Projects/"
+        url: projects
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/waseeq14"
+    - name: linkedin
+      url: "https://linkedin.com/in/waseeq-ur-rehman1337/"
+    - name: email
+      url: "mailto:waseeq2003@gmail.com"
+    - name: rss
+      url: "/index.xml"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  editPost:
+    URL: "https://github.com/waseeq14/waseeq14.github.io/tree/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: /posts/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 50
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>No-Escape on Waseeq Ur Rehman</title>
+    <link>http://localhost:1313/tags/no-escape/</link>
+    <description>Recent content in No-Escape on Waseeq Ur Rehman</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/no-escape/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>One Hook to Bypass All: Defeating iOS Jailbreak Detection with Frida</title>
+      <link>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</guid>
+      <description>Bypassing iOS jailbreak detection in No Escape by hooking the root isJailbroken() export with Frida, then using Objection to find the flag in memory.</description>
+    </item>
+  </channel>
+</rss>

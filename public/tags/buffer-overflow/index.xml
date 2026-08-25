@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Buffer-Overflow on Waseeq Ur Rehman</title>
+    <link>http://localhost:1313/tags/buffer-overflow/</link>
+    <description>Recent content in Buffer-Overflow on Waseeq Ur Rehman</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/buffer-overflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overflowing a JNI Buffer to Hijack system() in an Android Native Library</title>
+      <link>http://localhost:1313/posts/android-note-keeper-bof/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/android-note-keeper-bof/</guid>
+      <description>Exploiting a native stack buffer overflow in Note Keeper&amp;#39;s JNI code to overwrite a command buffer adjacent to the overflow target, achieving arbitrary command execution via system().</description>
+    </item>
+  </channel>
+</rss>

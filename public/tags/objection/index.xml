@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Objection on Waseeq Ur Rehman</title>
+    <link>http://localhost:1313/tags/objection/</link>
+    <description>Recent content in Objection on Waseeq Ur Rehman</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/objection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chaining Deep Link Injection with SQLi to Leak Sensitive Data from an iOS App</title>
+      <link>http://localhost:1313/posts/ios-flipcoin-wallet-deeplink-sqli/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ios-flipcoin-wallet-deeplink-sqli/</guid>
+      <description>Chaining deep link URL scheme handling with SQL injection in an iOS crypto wallet app to extract another user&amp;#39;s recovery key via a UNION-based query.</description>
+    </item>
+    <item>
+      <title>Defeating Multi-Layer Anti-Reversing Protections on iOS with Static Analysis and Frida</title>
+      <link>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</guid>
+      <description>Bypassing a multi-layered RASP/compliance check system in Captain NoHook using static analysis with r2/nm to locate functions, Frida to replace them, and Objection to find the hidden flag in memory.</description>
+    </item>
+    <item>
+      <title>One Hook to Bypass All: Defeating iOS Jailbreak Detection with Frida</title>
+      <link>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</guid>
+      <description>Bypassing iOS jailbreak detection in No Escape by hooking the root isJailbroken() export with Frida, then using Objection to find the flag in memory.</description>
+    </item>
+  </channel>
+</rss>
