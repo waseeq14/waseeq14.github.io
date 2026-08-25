@@ -30,8 +30,8 @@ Cybersecurity Consultant focused on offensive security — penetration testing, 
 
 <div class="accent-section">
 
-- BS Cyber Security — COMSATS University Islamabad
-- HSSC-ICS — Concordia College, Rawalpindi
+- BS Cyber Security — COMSATS University Islamabad, PK
+- HSSC-ICS — Concordia College, Rawalpindi, PK
 
 </div>
 
