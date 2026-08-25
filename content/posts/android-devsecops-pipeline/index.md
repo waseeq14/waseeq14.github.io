@@ -1,5 +1,5 @@
 ---
-title: "I Built a Security Pipeline That Scans Every Android Build Automatically"
+title: "Building a Security Pipeline for Android Apps"
 date: 2026-01-15
 draft: false
 tags: ["devsecops", "android", "jenkins", "aws", "mobsf", "ci-cd", "appsec"]
