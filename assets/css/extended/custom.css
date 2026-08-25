@@ -324,3 +324,25 @@ h1.post-title,
   box-shadow:   0 0 0 2px var(--purple-glow);
   outline:      none;
 }
+
+
+/* ── Fix nav overflow with JetBrains Mono ───────────────────────────── */
+nav#menu {
+  overflow: hidden !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+nav#menu::-webkit-scrollbar {
+  display: none;
+}
+
+nav#menu ul {
+  flex-wrap: nowrap;
+  gap: 0;
+  overflow: visible;
+}
+
+nav#menu ul li {
+  font-size: 0.85rem;
+}
