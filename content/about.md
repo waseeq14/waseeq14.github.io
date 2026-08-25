@@ -12,7 +12,7 @@ I'm Waseeq Ur Rehman, based in Islamabad, Pakistan. I spend most of my time brea
 
 ## What I Do
 
-My work covers Mobile Application Security (Android & iOS), Web Application Security, API Security Testing, and Network Security. On the more technical end I do Reverse Engineering, Binary Analysis and Exploit Development. I also did some work in the DevSecOps space, building security into pipelines rather than bolting it on after the fact.
+Cybersecurity Consultant focused on offensive security — penetration testing, reverse engineering, and binary exploitation.
 
 ---
 
@@ -41,12 +41,8 @@ My work covers Mobile Application Security (Android & iOS), Web Application Secu
 
 <div class="accent-section">
 
-- eLearnSecurity Mobile Application Penetration Tester (eMAPT) — INE
-- Certified in Cybersecurity (CC) — ISC2
-- HCIA Security — Huawei
-- Certified Red Team Analyst (CRTA) — CyberWarfare Labs
-- Certified AppSec Practitioner (CAP) — The SecOps Group
-- Certified Network Security Practitioner (CNSP) — The SecOps Group
+- Certified Penetration Testing Specialist <b>(CPTS)</b> — HackTheBox
+- eLearnSecurity Mobile Application Penetration Tester <b>(eMAPT)</b> — INE
 
 </div>
 
@@ -56,7 +52,7 @@ My work covers Mobile Application Security (Android & iOS), Web Application Secu
 
 <div class="accent-section">
 
-**CTF**
+**Hackathons**
 
 - Flagyard Blackhat 2025 Finalist — top 50, Riyadh, KSA (team PsychoTherapist)
 - Tech Olympics 2025 Finalist — 7th globally, 1st in Pakistan, Attack Defence CTF, Tehran, Iran (team PsychoTherapist)
@@ -80,6 +76,5 @@ My work covers Mobile Application Security (Android & iOS), Web Application Secu
 ## Community
 
 I'm an active member of [Cyber Hacktivators Club (CHC)](https://www.instagram.com/cyber_hacktivators/) - a security community started by peers at COMSATS University. I've helped organize and develop CTF competitions through the club, which has been a good way to give back to the local security community and get more people into the field.
-
 
 </div>
