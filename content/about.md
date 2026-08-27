@@ -12,7 +12,7 @@ I'm Waseeq Ur Rehman, based in Islamabad, Pakistan. I am a Cybersecurity student
 
 ## What I Do
 
-Cybersecurity Consultant focused on offensive security — penetration testing, reverse engineering, and binary exploitation.
+My work leans toward offensive security - penetration testing, reverse engineering, and binary exploitation.
 
 ---
 
@@ -20,7 +20,7 @@ Cybersecurity Consultant focused on offensive security — penetration testing, 
 
 <div class="accent-section">
 
-- Cybersecurity Consultant (Offensive Security) at [Secureism](https://secureism.com/), July 2025 – Present (Islamabad, PK)
+- Cybersecurity Consultant at [Secureism](https://secureism.com/), July 2025 – Present (Islamabad, PK)
 
 </div>
 
