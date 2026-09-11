@@ -358,27 +358,26 @@ nav#menu ul li {
 
 /* ── Layout container ──────────────────────────────────────────────── */
 .posts-with-sidebar {
-  display:  flex;
-  gap:      2rem;
-  align-items: flex-start;
+  position: relative;
 }
 
 .posts-main {
-  flex:      1;
-  min-width: 0;
+  max-width: 720px;
+  margin:    0 auto;
 }
 
 /* ── Sidebar ───────────────────────────────────────────────────────── */
 .posts-sidebar {
-  position:      sticky;
+  position:      fixed;
   top:           5rem;
-  width:         260px;
-  min-width:     260px;
+  left:          1rem;
+  width:         240px;
   max-height:    calc(100vh - 6rem);
   overflow-y:    auto;
   padding:       1rem 0;
   scrollbar-width: thin;
   scrollbar-color: var(--purple-dark) transparent;
+  z-index:       10;
 }
 
 .posts-sidebar::-webkit-scrollbar {
@@ -491,20 +490,9 @@ nav#menu ul li {
   padding-left: 2.8rem;
 }
 
-/* ── Responsive: sidebar collapses on mobile ───────────────────────── */
-@media (max-width: 860px) {
-  .posts-with-sidebar {
-    flex-direction: column;
-    gap: 0;
-  }
-
+/* ── Responsive: hide sidebar on smaller screens ───────────────────── */
+@media (max-width: 1280px) {
   .posts-sidebar {
-    position:   static;
-    width:      100%;
-    min-width:  unset;
-    max-height: none;
-    border-bottom: 1px solid var(--purple-dark);
-    padding-bottom: 1rem;
-    margin-bottom: 1.5rem;
+    display: none;
   }
 }
