@@ -350,3 +350,161 @@ nav#menu ul li {
   font-size: 0.82rem;
   padding: 0 4px;
 }
+
+
+/* ═══════════════════════════════════════════════════════════════════════
+   POSTS SIDEBAR — file-tree navigation on /posts/
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── Layout container ──────────────────────────────────────────────── */
+.posts-with-sidebar {
+  display:  flex;
+  gap:      2rem;
+  align-items: flex-start;
+}
+
+.posts-main {
+  flex:      1;
+  min-width: 0;
+}
+
+/* ── Sidebar ───────────────────────────────────────────────────────── */
+.posts-sidebar {
+  position:      sticky;
+  top:           5rem;
+  width:         260px;
+  min-width:     260px;
+  max-height:    calc(100vh - 6rem);
+  overflow-y:    auto;
+  padding:       1rem 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--purple-dark) transparent;
+}
+
+.posts-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.posts-sidebar::-webkit-scrollbar-thumb {
+  background: var(--purple-dark);
+  border-radius: 2px;
+}
+
+/* ── Sidebar header ────────────────────────────────────────────────── */
+.sidebar-header {
+  font-size:     0.85rem;
+  font-weight:   700;
+  color:         var(--purple-light);
+  padding:       0 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--purple-dark);
+  letter-spacing: 0.03em;
+}
+
+/* ── Toggle buttons (folder names) ─────────────────────────────────── */
+.sidebar-toggle {
+  display:        flex;
+  align-items:    center;
+  gap:            0.3rem;
+  width:          100%;
+  padding:        0.4rem 0.5rem;
+  background:     none;
+  border:         none;
+  color:          var(--purple-light);
+  font-size:      0.8rem;
+  font-weight:    600;
+  cursor:         pointer;
+  text-align:     left;
+  border-radius:  4px;
+  transition:     background var(--transition), color var(--transition);
+}
+
+.sidebar-toggle:hover {
+  background: var(--purple-glow);
+  color:      #fff;
+}
+
+.sidebar-toggle.sub {
+  font-size:   0.78rem;
+  font-weight: 500;
+  padding-left: 1.2rem;
+}
+
+.toggle-icon {
+  font-size:  0.7rem;
+  width:      0.8rem;
+  text-align: center;
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+/* ── Collapsible children ──────────────────────────────────────────── */
+.sidebar-children {
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.2s ease;
+}
+
+.sidebar-section[data-open="true"] > .sidebar-children {
+  max-height: 1000px;
+  opacity:    1;
+}
+
+.sidebar-section[data-open="false"] > .sidebar-children {
+  max-height: 0;
+  opacity:    0;
+}
+
+/* ── Post links (leaf nodes) ───────────────────────────────────────── */
+.sidebar-link {
+  display:       block;
+  padding:       0.3rem 0.5rem 0.3rem 2rem;
+  color:         var(--secondary);
+  font-size:     0.72rem;
+  line-height:   1.4;
+  text-decoration: none;
+  border-radius: 4px;
+  transition:    background var(--transition), color var(--transition),
+                 padding-left var(--transition);
+  border-left:   2px solid transparent;
+}
+
+.sidebar-link:hover {
+  background:    var(--purple-glow);
+  color:         var(--purple-light);
+  padding-left:  2.2rem;
+  border-left-color: var(--purple);
+}
+
+.sidebar-file {
+  display:            -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow:           hidden;
+}
+
+/* ── Nested sub-sections get deeper indent ─────────────────────────── */
+.sidebar-section .sidebar-section .sidebar-link {
+  padding-left: 2.6rem;
+}
+
+.sidebar-section .sidebar-section .sidebar-link:hover {
+  padding-left: 2.8rem;
+}
+
+/* ── Responsive: sidebar collapses on mobile ───────────────────────── */
+@media (max-width: 860px) {
+  .posts-with-sidebar {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .posts-sidebar {
+    position:   static;
+    width:      100%;
+    min-width:  unset;
+    max-height: none;
+    border-bottom: 1px solid var(--purple-dark);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}

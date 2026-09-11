@@ -1,6 +1,7 @@
 baseURL: "https://waseeq14.github.io/"
 title: "Waseeq Ur Rehman"
-paginate: 10
+pagination:
+  pagerSize: 10
 theme: PaperMod
 languageCode: en-us
 

@@ -1,0 +1,186 @@
+{{- define "main" }}
+
+<div class="posts-with-sidebar">
+  {{/* ── Sidebar navigation ─────────────────────────────────────────── */}}
+  <aside class="posts-sidebar">
+    <nav class="sidebar-nav">
+      <div class="sidebar-header">~/posts</div>
+
+      {{/* ── Writeups ── */}}
+      {{- $mhl := where .Pages "Params.categories" "intersect" (slice "Mobile Hacking Labs") }}
+      {{- $androidWriteups := where $mhl "Params.tags" "intersect" (slice "android") }}
+      {{- $iosWriteups := where $mhl "Params.tags" "intersect" (slice "ios") }}
+
+      {{- if $mhl }}
+      <div class="sidebar-section" data-open="true">
+        <button class="sidebar-toggle" aria-expanded="true">
+          <span class="toggle-icon">▾</span> Writeups/
+        </button>
+        <div class="sidebar-children">
+          {{/* Android */}}
+          {{- if $androidWriteups }}
+          <div class="sidebar-section" data-open="true">
+            <button class="sidebar-toggle sub" aria-expanded="true">
+              <span class="toggle-icon">▾</span> Android/
+            </button>
+            <div class="sidebar-children">
+              {{- range $androidWriteups.ByDate.Reverse }}
+              <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+                <span class="sidebar-file">{{ .Title }}</span>
+              </a>
+              {{- end }}
+            </div>
+          </div>
+          {{- end }}
+          {{/* iOS */}}
+          {{- if $iosWriteups }}
+          <div class="sidebar-section" data-open="true">
+            <button class="sidebar-toggle sub" aria-expanded="true">
+              <span class="toggle-icon">▾</span> iOS/
+            </button>
+            <div class="sidebar-children">
+              {{- range $iosWriteups.ByDate.Reverse }}
+              <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+                <span class="sidebar-file">{{ .Title }}</span>
+              </a>
+              {{- end }}
+            </div>
+          </div>
+          {{- end }}
+        </div>
+      </div>
+      {{- end }}
+
+      {{/* ── DVRN (Mobile Security Research) ── */}}
+      {{- $dvrn := where .Pages "Params.categories" "intersect" (slice "Mobile Security Research") }}
+      {{- if $dvrn }}
+      <div class="sidebar-section" data-open="true">
+        <button class="sidebar-toggle" aria-expanded="true">
+          <span class="toggle-icon">▾</span> DVRN/
+        </button>
+        <div class="sidebar-children">
+          {{- range $dvrn.ByDate }}
+          <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+            <span class="sidebar-file">{{ .Title }}</span>
+          </a>
+          {{- end }}
+        </div>
+      </div>
+      {{- end }}
+
+      {{/* ── DevSecOps (Projects) ── */}}
+      {{- $devsecops := where .Pages "Params.categories" "intersect" (slice "Projects") }}
+      {{- if $devsecops }}
+      <div class="sidebar-section" data-open="true">
+        <button class="sidebar-toggle" aria-expanded="true">
+          <span class="toggle-icon">▾</span> DevSecOps/
+        </button>
+        <div class="sidebar-children">
+          {{- range $devsecops.ByDate.Reverse }}
+          <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+            <span class="sidebar-file">{{ .Title }}</span>
+          </a>
+          {{- end }}
+        </div>
+      </div>
+      {{- end }}
+
+    </nav>
+  </aside>
+
+  {{/* ── Main content (post cards) ──────────────────────────────────── */}}
+  <div class="posts-main">
+    <header class="page-header">
+      {{- .Content }}
+      <h1>
+        {{ .Title }}
+        {{- if (and (eq .Kind "section") .Param "ShowRssButtonInSectionTermList") }}
+        <a href="index.xml" title="RSS" aria-label="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="23">
+            <path d="M4 11a9 9 0 0 1 9 9" />
+            <path d="M4 4a16 16 0 0 1 16 16" />
+            <circle cx="5" cy="19" r="1" />
+          </svg>
+        </a>
+        {{- end }}
+      </h1>
+      {{- if .Description }}
+      <div class="post-description">
+        {{ .Description | markdownify }}
+      </div>
+      {{- end }}
+    </header>
+
+    {{- $pages := union .Pages .Sections }}
+
+    {{- if .Site.Params.fuseOpts }}
+    <div id="searchbox">
+      <input id="searchInput" aria-label="Search" type="search" autocomplete="off" placeholder="Filter posts...">
+    </div>
+    {{- end }}
+
+    {{- $paginator := .Paginate $pages }}
+
+    {{- range $index, $page := $paginator.Pages }}
+    {{- $class := "post-entry" }}
+    {{- $isHidden := (site.Params.cover.hiddenInList | default site.Params.cover.hidden | default true) }}
+    <article class="{{ $class }}">
+      <header class="entry-header">
+        <h2>
+          <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
+        </h2>
+      </header>
+      {{- if (and .Description (not $.Params.hideSummary)) }}
+      <div class="entry-content">
+        <p>{{ .Description | markdownify | plainify | htmlUnescape }}</p>
+      </div>
+      {{- else if (and .Summary (not $.Params.hideSummary)) }}
+      <div class="entry-content">
+        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+      </div>
+      {{- end }}
+      {{- if not (.Param "hideMeta") }}
+      <footer class="entry-footer">
+        {{- partial "post_meta.html" . -}}
+      </footer>
+      {{- end }}
+      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+    </article>
+    {{- end }}
+
+    {{- if gt $paginator.TotalPages 1 }}
+    <footer class="page-footer">
+      <nav class="pagination">
+        {{- if $paginator.HasPrev }}
+        <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+          « {{ i18n "prev_page" | default "Prev" }}
+        </a>
+        {{- end }}
+        {{- if $paginator.HasNext }}
+        <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+          {{ i18n "next_page" | default "Next" }} »
+        </a>
+        {{- end }}
+      </nav>
+    </footer>
+    {{- end }}
+  </div>
+</div>
+
+{{/* ── Sidebar toggle script ──────────────────────────────────────── */}}
+<script>
+(function() {
+  document.querySelectorAll('.sidebar-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var section = this.closest('.sidebar-section');
+      var open = section.getAttribute('data-open') === 'true';
+      section.setAttribute('data-open', !open);
+      this.setAttribute('aria-expanded', !open);
+      this.querySelector('.toggle-icon').textContent = open ? '▸' : '▾';
+    });
+  });
+})();
+</script>
+
+{{- end }}{{/* end main */}}
