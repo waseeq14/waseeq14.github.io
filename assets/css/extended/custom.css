@@ -325,36 +325,26 @@ h1.post-title,
 
 /* ── Layout wrapper ───────────────────────────────────────────────────── */
 .single-with-toc {
-  display:  flex;
-  gap:      2rem;
-  max-width: 1200px;
-  margin:   0 auto;
-  align-items: flex-start;
-}
-
-.single-with-toc.no-toc {
-  display: block;
+  position: relative;
 }
 
 .single-with-toc .post-single {
-  flex:      1;
-  min-width: 0;
   max-width: 720px;
   margin:    0 auto;
 }
 
 /* ── ToC sidebar ──────────────────────────────────────────────────────── */
 .toc-sidebar {
-  position:   sticky;
-  top:        5rem;
-  width:      220px;
-  min-width:  220px;
-  max-height: calc(100vh - 6rem);
-  overflow-y: auto;
-  padding:    1rem 0;
+  position:      fixed;
+  top:           5rem;
+  left:          1rem;
+  width:         240px;
+  max-height:    calc(100vh - 6rem);
+  overflow-y:    auto;
+  padding:       1rem 0;
   scrollbar-width: thin;
   scrollbar-color: var(--purple-dark) transparent;
-  flex-shrink: 0;
+  z-index:       10;
 }
 
 .toc-sidebar::-webkit-scrollbar {
@@ -368,7 +358,7 @@ h1.post-title,
 
 /* ── Sidebar header ───────────────────────────────────────────────────── */
 .toc-sidebar-header {
-  font-size:      0.82rem;
+  font-size:      0.85rem;
   font-weight:    700;
   color:          var(--purple-light);
   padding:        0 0.5rem 0.75rem;
@@ -399,9 +389,9 @@ h1.post-title,
 
 .toc-sidebar-inner #TableOfContents a {
   display:         block;
-  padding:         0.25rem 0.5rem;
+  padding:         0.3rem 0.5rem;
   color:           var(--secondary);
-  font-size:       0.76rem;
+  font-size:       0.8rem;
   line-height:     1.4;
   text-decoration: none;
   border-radius:   4px;
