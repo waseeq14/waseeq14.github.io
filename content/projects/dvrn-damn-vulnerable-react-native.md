@@ -17,7 +17,7 @@ description: "A deliberately vulnerable React Native app built to teach RN-speci
 showToc: true
 ---
 
-**GitHub:** [github.com/waseeq14/DVRN](https://github.com/waseeq14/DVRN)
+**GitHub:** [github.com/waseeq14/Damn-Vulnerable-React-Native](https://github.com/waseeq14/Damn-Vulnerable-React-Native)
 
 **Blog series:**
 
@@ -86,7 +86,7 @@ DVRN/
 └── variant-c-new-hermes/
 ```
 
-Pre-built release APKs for all three variants are available under [GitHub Releases](https://github.com/waseeq14/DVRN/releases) if you'd rather test than build.
+Pre-built release APKs for all three variants are available under [GitHub Releases](https://github.com/waseeq14/Damn-Vulnerable-React-Native/releases) if you'd rather test than build.
 
 ---
 
