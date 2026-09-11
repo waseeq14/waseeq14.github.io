@@ -3,7 +3,7 @@ title: "Two Ways to Break a Hardcoded PIN: AES Bruteforce vs Frida Hooking"
 date: 2025-10-15
 draft: false
 tags: ["android", "frida", "crypto", "aes", "hooking", "broadcast-receiver", "mobile-hacking-labs", "iot-connect"]
-categories: ["Mobile Hacking Labs"]
+categories: ["Writeups"]
 description: "Two approaches to bypass a PIN check in an IoT Android app: offline AES bruteforce to recover the key (345), and runtime Frida hook to skip the check entirely."
 showToc: true
 ---

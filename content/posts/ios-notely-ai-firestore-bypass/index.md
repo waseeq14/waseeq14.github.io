@@ -3,7 +3,7 @@ title: "Client-Side Access Control is Not Access Control: Firestore Query Tamper
 date: 2026-01-01
 draft: false
 tags: ["ios", "frida", "firebase", "firestore", "objc-runtime", "hooking", "broken-access-control", "mobile-hacking-labs", "notely-ai"]
-categories: ["Mobile Hacking Labs"]
+categories: ["Writeups"]
 description: "Bypassing Frida detection in Notely AI and tampering with Firestore queries at runtime via ObjC method hooking to access archived admin notes."
 showToc: true
 ---

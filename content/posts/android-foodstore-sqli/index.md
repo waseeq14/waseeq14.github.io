@@ -3,7 +3,7 @@ title: "Exploiting SQLite Injection via Username Field Concatenation on Android"
 date: 2025-11-01
 draft: false
 tags: ["android", "sqli", "sqlite", "static-analysis", "mobile-hacking-labs", "foodstore"]
-categories: ["Mobile Hacking Labs"]
+categories: ["Writeups"]
 description: "Exploiting SQL injection in an Android app's signup function via username field concatenation to register a Pro account with 10,000 credits."
 showToc: true
 ---

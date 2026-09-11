@@ -3,7 +3,7 @@ title: "Defeating Multi-Layer Anti-Reversing Protections on iOS with Static Anal
 date: 2025-12-01
 draft: false
 tags: ["ios", "frida", "rasp", "anti-reversing", "radare2", "objection", "swift", "mobile-hacking-labs", "captain-nohook"]
-categories: ["Mobile Hacking Labs"]
+categories: ["Writeups"]
 description: "Bypassing a multi-layered RASP/compliance check system in Captain NoHook using static analysis with r2/nm to locate functions, Frida to replace them, and Objection to find the hidden flag in memory."
 showToc: true
 ---

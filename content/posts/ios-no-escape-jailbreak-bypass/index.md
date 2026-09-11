@@ -3,7 +3,7 @@ title: "One Hook to Bypass All: Defeating iOS Jailbreak Detection with Frida"
 date: 2025-11-15
 draft: false
 tags: ["ios", "frida", "jailbreak-bypass", "radare2", "objection", "swift", "mobile-hacking-labs", "no-escape"]
-categories: ["Mobile Hacking Labs"]
+categories: ["Writeups"]
 description: "Bypassing iOS jailbreak detection in No Escape by hooking the root isJailbroken() export with Frida, then using Objection to find the flag in memory."
 showToc: true
 ---

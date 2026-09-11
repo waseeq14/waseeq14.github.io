@@ -7,7 +7,7 @@
       <div class="sidebar-header">~/posts</div>
 
       {{/* ── Writeups ── */}}
-      {{- $mhl := where .Pages "Params.categories" "intersect" (slice "Mobile Hacking Labs") }}
+      {{- $mhl := where .Pages "Params.categories" "intersect" (slice "Writeups") }}
       {{- $androidWriteups := where $mhl "Params.tags" "intersect" (slice "android") }}
       {{- $iosWriteups := where $mhl "Params.tags" "intersect" (slice "ios") }}
 
@@ -52,7 +52,7 @@
       {{- end }}
 
       {{/* ── DVRN (Mobile Security Research) ── */}}
-      {{- $dvrn := where .Pages "Params.categories" "intersect" (slice "Mobile Security Research") }}
+      {{- $dvrn := where .Pages "Params.categories" "intersect" (slice "DVRN") }}
       {{- if $dvrn }}
       <div class="sidebar-section" data-open="true">
         <button class="sidebar-toggle" aria-expanded="true">
@@ -69,7 +69,7 @@
       {{- end }}
 
       {{/* ── DevSecOps (Projects) ── */}}
-      {{- $devsecops := where .Pages "Params.categories" "intersect" (slice "Projects") }}
+      {{- $devsecops := where .Pages "Params.categories" "intersect" (slice "DevSecOps") }}
       {{- if $devsecops }}
       <div class="sidebar-section" data-open="true">
         <button class="sidebar-toggle" aria-expanded="true">

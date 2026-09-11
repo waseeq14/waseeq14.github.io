@@ -3,7 +3,7 @@ title: "Building a Security Pipeline for Android Apps"
 date: 2026-01-15
 draft: false
 tags: ["devsecops", "android", "jenkins", "aws", "mobsf", "ci-cd", "appsec"]
-categories: ["Projects"]
+categories: ["DevSecOps"]
 description: "A walkthrough of why I built an automated Android DevSecOps pipeline and what it covers - from SAST to APK-level mobile analysis, all wired into a single vulnerability dashboard."
 showToc: false
 ---

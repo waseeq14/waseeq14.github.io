@@ -3,7 +3,7 @@ title: "Unsafe YAML Deserialization to RCE on Android"
 date: 2025-10-01
 draft: false
 tags: ["android", "deserialization", "rce", "snakeyaml", "jadx", "static-analysis", "mobile-hacking-labs", "config-editor"]
-categories: ["Mobile Hacking Labs"]
+categories: ["Writeups"]
 description: "Exploiting an unsafe SnakeYAML deserialization flow chained with a legacy command execution utility to achieve RCE on an Android app."
 showToc: true
 ---

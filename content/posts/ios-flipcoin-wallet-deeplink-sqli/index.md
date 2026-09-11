@@ -3,7 +3,7 @@ title: "Chaining Deep Link Injection with SQLi to Leak Sensitive Data from an iO
 date: 2025-12-15
 draft: false
 tags: ["ios", "sqli", "deeplink", "frida", "objection", "sqlite", "union-injection", "mobile-hacking-labs", "flipcoin-wallet"]
-categories: ["Mobile Hacking Labs"]
+categories: ["Writeups"]
 description: "Chaining deep link URL scheme handling with SQL injection in an iOS crypto wallet app to extract another user's recovery key via a UNION-based query."
 showToc: true
 ---

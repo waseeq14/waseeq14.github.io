@@ -3,7 +3,7 @@ title: "Overflowing a JNI Buffer to Hijack system() in an Android Native Library
 date: 2025-09-01
 draft: false
 tags: ["android", "buffer-overflow", "native", "jni", "ghidra", "exploitation", "mobile-hacking-labs", "note-keeper"]
-categories: ["Mobile Hacking Labs"]
+categories: ["Writeups"]
 description: "Exploiting a native stack buffer overflow in Note Keeper's JNI code to overwrite a command buffer adjacent to the overflow target, achieving arbitrary command execution via system()."
 showToc: true
 ---
