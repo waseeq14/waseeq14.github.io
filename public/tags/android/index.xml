@@ -1,54 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Android on Waseeq Ur Rehman</title>
-    <link>http://localhost:1313/tags/android/</link>
-    <description>Recent content in Android on Waseeq Ur Rehman</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/android/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Automated DevSecOps Pipeline for Android Applications</title>
-      <link>http://localhost:1313/projects/android-devsecops-pipeline/</link>
-      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/android-devsecops-pipeline/</guid>
-      <description>A fully automated Android security pipeline built on Jenkins across two AWS EC2 instances, integrating Semgrep, Gitleaks, SonarQube, Trivy, MobSF, and DefectDojo to cover every security layer from source to APK.</description>
-    </item>
-    <item>
-      <title>I Built a Security Pipeline That Scans Every Android Build Automatically</title>
-      <link>http://localhost:1313/posts/android-devsecops-pipeline/</link>
-      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-devsecops-pipeline/</guid>
-      <description>A walkthrough of why I built an automated Android DevSecOps pipeline and what it covers - from SAST to APK-level mobile analysis, all wired into a single vulnerability dashboard.</description>
-    </item>
-    <item>
-      <title>Exploiting SQLite Injection via Username Field Concatenation on Android</title>
-      <link>http://localhost:1313/posts/android-foodstore-sqli/</link>
-      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-foodstore-sqli/</guid>
-      <description>Exploiting SQL injection in an Android app&amp;#39;s signup function via username field concatenation to register a Pro account with 10,000 credits.</description>
-    </item>
-    <item>
-      <title>Two Ways to Break a Hardcoded PIN: AES Bruteforce vs Frida Hooking</title>
-      <link>http://localhost:1313/posts/android-iot-connect/</link>
-      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-iot-connect/</guid>
-      <description>Two approaches to bypass a PIN check in an IoT Android app: offline AES bruteforce to recover the key (345), and runtime Frida hook to skip the check entirely.</description>
-    </item>
-    <item>
-      <title>Unsafe YAML Deserialization to RCE on Android</title>
-      <link>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</link>
-      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</guid>
-      <description>Exploiting an unsafe SnakeYAML deserialization flow chained with a legacy command execution utility to achieve RCE on an Android app.</description>
-    </item>
-    <item>
-      <title>Overflowing a JNI Buffer to Hijack system() in an Android Native Library</title>
-      <link>http://localhost:1313/posts/android-note-keeper-bof/</link>
-      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-note-keeper-bof/</guid>
-      <description>Exploiting a native stack buffer overflow in Note Keeper&amp;#39;s JNI code to overwrite a command buffer adjacent to the overflow target, achieving arbitrary command execution via system().</description>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Android on Waseeq Ur Rehman</title>
+		<link>http://localhost:1313/tags/android/</link>
+		<description>Recent content in Android on Waseeq Ur Rehman</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/android/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Exploiting React Native Apps: A Hands-On Walkthrough with DVRN</title>
+				<link>http://localhost:1313/posts/react-native-pentesting-with-dvrn/</link>
+				<pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/react-native-pentesting-with-dvrn/</guid>
+				<description>&lt;p&gt;This is Part 2 of a two-part series on testing React Native applications. &lt;a href=&#34;http://localhost:1313/posts/react-native-pentesting-fundamentals/&#34;&gt;Part 1&lt;/a&gt; covered identifying an RN app, detecting its architecture and JS engine, and reading its bundle. This part puts all of that to use against DVRN, a deliberately vulnerable RN app I built specifically for this series, walking through five real vulnerabilities end to end.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;introducing-dvrn&#34;&gt;Introducing DVRN&lt;/h2&gt;&#xA;&lt;p&gt;DVRN (Damn Vulnerable React Native) is a deliberately vulnerable React Native app I built to have a real, hands-on target for the techniques covered in Part 1, rather than talking about them in the abstract.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Understanding React Native Apps: A Pentester&#39;s Field Guide</title>
+				<link>http://localhost:1313/posts/react-native-pentesting-fundamentals/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/react-native-pentesting-fundamentals/</guid>
+				<description>&lt;p&gt;This is Part 1 of a two-part series on testing React Native applications. This part covers what you need to know before you start testing- identifying an RN app, understanding how it&amp;rsquo;s actually built, and setting up the right recon workflow. Part 2 walks through exploiting five real vulnerabilities using DVRN, a deliberately vulnerable RN app I built specifically for this series.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-react-native-and-why-should-a-pentester-care&#34;&gt;What is React Native, and why should a pentester care&lt;/h2&gt;&#xA;&lt;p&gt;React Native lets you write mobile apps in JavaScript, using React, and ship them as genuinely native Android and iOS apps. That last part matters more than it sounds. Instead of compiling your code into a web browser wrapper like traditional hybrid apps, it communicates directly with the host platform - your &lt;code&gt;&amp;lt;View&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;Text&amp;gt;&lt;/code&gt; components become real &lt;code&gt;android.widget.*&lt;/code&gt; views on Android, not HTML rendered inside a WebView. The JS layer decides what to show and how to respond to events; the actual rendering is native.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Automated DevSecOps Pipeline for Android Applications</title>
+				<link>http://localhost:1313/projects/android-devsecops-pipeline/</link>
+				<pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/android-devsecops-pipeline/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;As mobile applications evolve rapidly, security can no longer be treated as a post-deployment activity. Modern DevSecOps practices emphasize continuous security testing, ensuring vulnerabilities are identified early, tracked centrally, and remediated efficiently.&lt;/p&gt;&#xA;&lt;p&gt;In this project, I implemented a fully automated DevSecOps pipeline for Android applications using Jenkins. The pipeline integrates multiple industry-standard security tools to cover source code analysis, secrets detection, dependency and filesystem scanning, and mobile-specific vulnerability assessment.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Building a Security Pipeline for Android Apps</title>
+				<link>http://localhost:1313/posts/android-devsecops-pipeline/</link>
+				<pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/android-devsecops-pipeline/</guid>
+				<description>&lt;p&gt;Most security work happens too late. Code ships, an APK gets published, and someone finds a hardcoded API key or an insecure TLS configuration weeks later. I wanted to see what it looked like to wire security directly into the build process - so I built a pipeline that does it automatically on every commit.&lt;/p&gt;&#xA;&lt;p&gt;The result is a Jenkins-based DevSecOps pipeline deployed on AWS that runs six different security tools against an Android application: static code analysis, secrets scanning, dependency scanning, code quality gates, and full APK-level mobile security testing - all feeding into a centralized vulnerability dashboard.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Exploiting SQLite Injection via Username Field Concatenation on Android</title>
+				<link>http://localhost:1313/posts/android-foodstore-sqli/</link>
+				<pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/android-foodstore-sqli/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;FoodStore&lt;/strong&gt; Android challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - a straightforward but satisfying SQL injection challenge hidden inside a food delivery app.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Exploit a SQL Injection vulnerability in the signup function to register a Pro user (10,000 credits) and bypass normal restrictions.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;environment&#34;&gt;Environment&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Android app: &lt;code&gt;com.mobilehackinglab.foodstore&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Vulnerable class: &lt;code&gt;DBHelper&lt;/code&gt; (uses &lt;code&gt;SQLiteOpenHelper&lt;/code&gt; and &lt;code&gt;execSQL&lt;/code&gt; with string concatenation)&lt;/li&gt;&#xA;&lt;li&gt;DB: &lt;code&gt;userdatabase.db&lt;/code&gt;, table &lt;code&gt;users(id, username, password, address, isPro)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;vulnerable-code&#34;&gt;Vulnerable Code&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;47f2487de127e6e14c96601d0d90f1f5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Two Ways to Break a Hardcoded PIN: AES Bruteforce vs Frida Hooking</title>
+				<link>http://localhost:1313/posts/android-iot-connect/</link>
+				<pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/android-iot-connect/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;IOT Connect&lt;/strong&gt; Android challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - I ended up solving it two different ways, which made it a great exercise in both static crypto analysis and dynamic instrumentation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Gain the ability to turn on all devices (master switch) by bypassing the PIN check - either by reversing to recover the PIN or hooking the check function at runtime.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;p&gt;Two effective approaches to solve this challenge:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Unsafe YAML Deserialization to RCE on Android</title>
+				<link>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</link>
+				<pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;Config Editor&lt;/strong&gt; Android challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - a static analysis puzzle that ends up being a lot more interesting than the UI suggests.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Target:&lt;/strong&gt; Mobile Hacking Lab - Config Editor (APK)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; During static analysis of the Config Editor APK, I discovered an unsafe YAML deserialization flow using the SnakeYAML library combined with a legacy command execution utility. This results in remote code execution on the device by deserializing attacker-controlled YAML that constructs and executes arbitrary Java commands.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Overflowing a JNI Buffer to Hijack system() in an Android Native Library</title>
+				<link>http://localhost:1313/posts/android-note-keeper-bof/</link>
+				<pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/android-note-keeper-bof/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;Note Keeper&lt;/strong&gt; Android challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - one of the more interesting challenges in the lab since it gets into native code exploitation rather than the usual Java layer.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;I found a native stack buffer overflow in the Note Keeper challenge that lets me control the command string passed to &lt;code&gt;system()&lt;/code&gt; from the app&amp;rsquo;s JNI code.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The APK takes &lt;strong&gt;Title&lt;/strong&gt; and &lt;strong&gt;Content&lt;/strong&gt; as inputs, and passes the title to &lt;code&gt;parse()&lt;/code&gt; - a native function defined in &lt;code&gt;libnotekeeper.so&lt;/code&gt;.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

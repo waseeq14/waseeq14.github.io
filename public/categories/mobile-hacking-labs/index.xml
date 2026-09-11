@@ -1,68 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Mobile Hacking Labs on Waseeq Ur Rehman</title>
-    <link>http://localhost:1313/categories/mobile-hacking-labs/</link>
-    <description>Recent content in Mobile Hacking Labs on Waseeq Ur Rehman</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/mobile-hacking-labs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Client-Side Access Control is Not Access Control: Firestore Query Tampering via Frida</title>
-      <link>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</guid>
-      <description>Bypassing Frida detection in Notely AI and tampering with Firestore queries at runtime via ObjC method hooking to access archived admin notes.</description>
-    </item>
-    <item>
-      <title>Chaining Deep Link Injection with SQLi to Leak Sensitive Data from an iOS App</title>
-      <link>http://localhost:1313/posts/ios-flipcoin-wallet-deeplink-sqli/</link>
-      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ios-flipcoin-wallet-deeplink-sqli/</guid>
-      <description>Chaining deep link URL scheme handling with SQL injection in an iOS crypto wallet app to extract another user&amp;#39;s recovery key via a UNION-based query.</description>
-    </item>
-    <item>
-      <title>Defeating Multi-Layer Anti-Reversing Protections on iOS with Static Analysis and Frida</title>
-      <link>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</link>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</guid>
-      <description>Bypassing a multi-layered RASP/compliance check system in Captain NoHook using static analysis with r2/nm to locate functions, Frida to replace them, and Objection to find the hidden flag in memory.</description>
-    </item>
-    <item>
-      <title>One Hook to Bypass All: Defeating iOS Jailbreak Detection with Frida</title>
-      <link>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</link>
-      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</guid>
-      <description>Bypassing iOS jailbreak detection in No Escape by hooking the root isJailbroken() export with Frida, then using Objection to find the flag in memory.</description>
-    </item>
-    <item>
-      <title>Exploiting SQLite Injection via Username Field Concatenation on Android</title>
-      <link>http://localhost:1313/posts/android-foodstore-sqli/</link>
-      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-foodstore-sqli/</guid>
-      <description>Exploiting SQL injection in an Android app&amp;#39;s signup function via username field concatenation to register a Pro account with 10,000 credits.</description>
-    </item>
-    <item>
-      <title>Two Ways to Break a Hardcoded PIN: AES Bruteforce vs Frida Hooking</title>
-      <link>http://localhost:1313/posts/android-iot-connect/</link>
-      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-iot-connect/</guid>
-      <description>Two approaches to bypass a PIN check in an IoT Android app: offline AES bruteforce to recover the key (345), and runtime Frida hook to skip the check entirely.</description>
-    </item>
-    <item>
-      <title>Unsafe YAML Deserialization to RCE on Android</title>
-      <link>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</link>
-      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</guid>
-      <description>Exploiting an unsafe SnakeYAML deserialization flow chained with a legacy command execution utility to achieve RCE on an Android app.</description>
-    </item>
-    <item>
-      <title>Overflowing a JNI Buffer to Hijack system() in an Android Native Library</title>
-      <link>http://localhost:1313/posts/android-note-keeper-bof/</link>
-      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-note-keeper-bof/</guid>
-      <description>Exploiting a native stack buffer overflow in Note Keeper&amp;#39;s JNI code to overwrite a command buffer adjacent to the overflow target, achieving arbitrary command execution via system().</description>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Mobile Hacking Labs on Waseeq Ur Rehman</title>
+		<link>http://localhost:1313/categories/mobile-hacking-labs/</link>
+		<description>Recent content in Mobile Hacking Labs on Waseeq Ur Rehman</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/categories/mobile-hacking-labs/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Client-Side Access Control is Not Access Control: Firestore Query Tampering via Frida</title>
+				<link>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</link>
+				<pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;Notely AI&lt;/strong&gt; iOS challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt;. The Frida detection bypass was quick, but getting past the admin check took a completely different approach than I expected.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;initial-check&#34;&gt;Initial Check&lt;/h2&gt;&#xA;&lt;p&gt;When opened on a jailbroken device with Frida installed, the app showed an alert: &lt;code&gt;Frida Framework Detected&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Searching for the string in r2:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;b17c7d6912af6c4102e1c34b01a11290.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cross-referencing it:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;1cf2a9dbcfe42ca6da6eda7e16ad3c30.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Found the responsible function at &lt;code&gt;sym.func.100006074&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;c057e4558216555fe0fa350e56cc9a90.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wrote a Frida script to replace it with a no-op:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Chaining Deep Link Injection with SQLi to Leak Sensitive Data from an iOS App</title>
+				<link>http://localhost:1313/posts/ios-flipcoin-wallet-deeplink-sqli/</link>
+				<pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/ios-flipcoin-wallet-deeplink-sqli/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;Flipcoin Wallet&lt;/strong&gt; iOS challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - a two-part challenge involving deep link abuse and SQL injection that chains together really nicely.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;understanding-the-challenge&#34;&gt;Understanding the Challenge&lt;/h2&gt;&#xA;&lt;p&gt;The app is a crypto banking app with &lt;strong&gt;Flipcoin&lt;/strong&gt; as its currency. Features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Receive coins via QR code&lt;/li&gt;&#xA;&lt;li&gt;Send coins to other accounts&lt;/li&gt;&#xA;&lt;li&gt;Transaction history&lt;/li&gt;&#xA;&lt;li&gt;Crypto news tab&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The challenge description mentions &lt;strong&gt;SQLi&lt;/strong&gt; and &lt;strong&gt;deeplink&lt;/strong&gt; exploitation. The goal is to extract &lt;strong&gt;recovery keys&lt;/strong&gt; of other users.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Defeating Multi-Layer Anti-Reversing Protections on iOS with Static Analysis and Frida</title>
+				<link>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</link>
+				<pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;Captain NoHook&lt;/strong&gt; iOS challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - combining multiple runtime checks, a non-exported debugger trap, and a hidden flag buried in memory.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A classic mobile RASP / anti-reversing puzzle. &lt;strong&gt;Goal: bypass the app&amp;rsquo;s reverse-engineering/compliance checks and find the hidden flag in memory.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Combined &lt;strong&gt;static analysis (radare2 / nm)&lt;/strong&gt; with &lt;strong&gt;dynamic instrumentation (Frida)&lt;/strong&gt; and &lt;strong&gt;Objection&lt;/strong&gt; for memory inspection.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-static-discovery-with-r2--nm&#34;&gt;1. Static Discovery with r2 / nm&lt;/h2&gt;&#xA;&lt;p&gt;Loaded the app binary into &lt;code&gt;r2&lt;/code&gt; and searched for symbols/functions containing the term &lt;strong&gt;&lt;code&gt;compliant&lt;/code&gt;&lt;/strong&gt;. That quickly pointed at the high-level check deciding whether the device is &amp;ldquo;noncompliant&amp;rdquo;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>One Hook to Bypass All: Defeating iOS Jailbreak Detection with Frida</title>
+				<link>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</link>
+				<pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;No Escape&lt;/strong&gt; iOS challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - a quick but clean jailbreak detection bypass that demonstrates how fragile single-function guards really are.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A simple jailbreak detection bypass challenge. I downloaded the IPA, extracted it, and analyzed the binary with radare2. A few jailbreak detection methods were found:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;210d29dbd6c038c006dcfa5228db52fa.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;All of them were called inside a single main detection function. I got its full mangled name using &lt;code&gt;nm&lt;/code&gt;:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Exploiting SQLite Injection via Username Field Concatenation on Android</title>
+				<link>http://localhost:1313/posts/android-foodstore-sqli/</link>
+				<pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/android-foodstore-sqli/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;FoodStore&lt;/strong&gt; Android challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - a straightforward but satisfying SQL injection challenge hidden inside a food delivery app.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Exploit a SQL Injection vulnerability in the signup function to register a Pro user (10,000 credits) and bypass normal restrictions.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;environment&#34;&gt;Environment&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Android app: &lt;code&gt;com.mobilehackinglab.foodstore&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Vulnerable class: &lt;code&gt;DBHelper&lt;/code&gt; (uses &lt;code&gt;SQLiteOpenHelper&lt;/code&gt; and &lt;code&gt;execSQL&lt;/code&gt; with string concatenation)&lt;/li&gt;&#xA;&lt;li&gt;DB: &lt;code&gt;userdatabase.db&lt;/code&gt;, table &lt;code&gt;users(id, username, password, address, isPro)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;vulnerable-code&#34;&gt;Vulnerable Code&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;47f2487de127e6e14c96601d0d90f1f5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Two Ways to Break a Hardcoded PIN: AES Bruteforce vs Frida Hooking</title>
+				<link>http://localhost:1313/posts/android-iot-connect/</link>
+				<pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/android-iot-connect/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;IOT Connect&lt;/strong&gt; Android challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - I ended up solving it two different ways, which made it a great exercise in both static crypto analysis and dynamic instrumentation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Gain the ability to turn on all devices (master switch) by bypassing the PIN check - either by reversing to recover the PIN or hooking the check function at runtime.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;p&gt;Two effective approaches to solve this challenge:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Unsafe YAML Deserialization to RCE on Android</title>
+				<link>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</link>
+				<pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;Config Editor&lt;/strong&gt; Android challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - a static analysis puzzle that ends up being a lot more interesting than the UI suggests.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Target:&lt;/strong&gt; Mobile Hacking Lab - Config Editor (APK)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; During static analysis of the Config Editor APK, I discovered an unsafe YAML deserialization flow using the SnakeYAML library combined with a legacy command execution utility. This results in remote code execution on the device by deserializing attacker-controlled YAML that constructs and executes arbitrary Java commands.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Overflowing a JNI Buffer to Hijack system() in an Android Native Library</title>
+				<link>http://localhost:1313/posts/android-note-keeper-bof/</link>
+				<pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/android-note-keeper-bof/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;Note Keeper&lt;/strong&gt; Android challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - one of the more interesting challenges in the lab since it gets into native code exploitation rather than the usual Java layer.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;I found a native stack buffer overflow in the Note Keeper challenge that lets me control the command string passed to &lt;code&gt;system()&lt;/code&gt; from the app&amp;rsquo;s JNI code.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The APK takes &lt;strong&gt;Title&lt;/strong&gt; and &lt;strong&gt;Content&lt;/strong&gt; as inputs, and passes the title to &lt;code&gt;parse()&lt;/code&gt; - a native function defined in &lt;code&gt;libnotekeeper.so&lt;/code&gt;.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

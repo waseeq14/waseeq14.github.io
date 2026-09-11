@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Django on Waseeq Ur Rehman</title>
-    <link>http://localhost:1313/tags/django/</link>
-    <description>Recent content in Django on Waseeq Ur Rehman</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/django/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ACRS - Automated Cyber Reasoning System</title>
-      <link>http://localhost:1313/projects/acrs-automated-cyber-reasoning-system/</link>
-      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/acrs-automated-cyber-reasoning-system/</guid>
-      <description>Final Year Project — an automated vulnerability discovery, analysis, and remediation framework combining static analysis, symbolic execution, fuzzing, and LLM reasoning into a single research-oriented pipeline.</description>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Django on Waseeq Ur Rehman</title>
+		<link>http://localhost:1313/tags/django/</link>
+		<description>Recent content in Django on Waseeq Ur Rehman</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/django/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>ACRS - Automated Cyber Reasoning System</title>
+				<link>http://localhost:1313/projects/acrs-automated-cyber-reasoning-system/</link>
+				<pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/acrs-automated-cyber-reasoning-system/</guid>
+				<description>&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin-bottom: 2rem; border: 1px solid var(--purple-dark);&#34;&gt;&#xA;  &lt;iframe&#xA;    src=&#34;https://www.youtube.com/embed/ym0mpNBknpw&#34;&#xA;    title=&#34;ACRS Demo&#34;&#xA;    frameborder=&#34;0&#34;&#xA;    allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34;&#xA;    allowfullscreen&#xA;    style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;&gt;&#xA;  &lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/waseeq14/ACRS&#34;&gt;github.com/waseeq14/ACRS&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;ACRS (Automated Cyber Reasoning System) is our Final Year Project for BS Cyber Security at COMSATS University Islamabad. The project targets a hard, practical problem in security research: vulnerability discovery and triage at scale is slow, manual, and expensive. ACRS attempts to automate the full pipeline — from finding bugs in C/C++ source code to explaining crashes, generating fix candidates, and assessing live systems over SSH.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

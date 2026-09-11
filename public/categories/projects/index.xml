@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Projects on Waseeq Ur Rehman</title>
-    <link>http://localhost:1313/categories/projects/</link>
-    <description>Recent content in Projects on Waseeq Ur Rehman</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>I Built a Security Pipeline That Scans Every Android Build Automatically</title>
-      <link>http://localhost:1313/posts/android-devsecops-pipeline/</link>
-      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-devsecops-pipeline/</guid>
-      <description>A walkthrough of why I built an automated Android DevSecOps pipeline and what it covers - from SAST to APK-level mobile analysis, all wired into a single vulnerability dashboard.</description>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Projects on Waseeq Ur Rehman</title>
+		<link>http://localhost:1313/categories/projects/</link>
+		<description>Recent content in Projects on Waseeq Ur Rehman</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Building a Security Pipeline for Android Apps</title>
+				<link>http://localhost:1313/posts/android-devsecops-pipeline/</link>
+				<pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/android-devsecops-pipeline/</guid>
+				<description>&lt;p&gt;Most security work happens too late. Code ships, an APK gets published, and someone finds a hardcoded API key or an insecure TLS configuration weeks later. I wanted to see what it looked like to wire security directly into the build process - so I built a pipeline that does it automatically on every commit.&lt;/p&gt;&#xA;&lt;p&gt;The result is a Jenkins-based DevSecOps pipeline deployed on AWS that runs six different security tools against an Android application: static code analysis, secrets scanning, dependency scanning, code quality gates, and full APK-level mobile security testing - all feeding into a centralized vulnerability dashboard.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

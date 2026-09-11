@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Anti-Reversing on Waseeq Ur Rehman</title>
-    <link>http://localhost:1313/tags/anti-reversing/</link>
-    <description>Recent content in Anti-Reversing on Waseeq Ur Rehman</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/anti-reversing/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Defeating Multi-Layer Anti-Reversing Protections on iOS with Static Analysis and Frida</title>
-      <link>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</link>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</guid>
-      <description>Bypassing a multi-layered RASP/compliance check system in Captain NoHook using static analysis with r2/nm to locate functions, Frida to replace them, and Objection to find the hidden flag in memory.</description>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Anti-Reversing on Waseeq Ur Rehman</title>
+		<link>http://localhost:1313/tags/anti-reversing/</link>
+		<description>Recent content in Anti-Reversing on Waseeq Ur Rehman</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/anti-reversing/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Defeating Multi-Layer Anti-Reversing Protections on iOS with Static Analysis and Frida</title>
+				<link>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</link>
+				<pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/ios-captain-nohook-rasp-bypass/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;Captain NoHook&lt;/strong&gt; iOS challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - combining multiple runtime checks, a non-exported debugger trap, and a hidden flag buried in memory.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A classic mobile RASP / anti-reversing puzzle. &lt;strong&gt;Goal: bypass the app&amp;rsquo;s reverse-engineering/compliance checks and find the hidden flag in memory.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Combined &lt;strong&gt;static analysis (radare2 / nm)&lt;/strong&gt; with &lt;strong&gt;dynamic instrumentation (Frida)&lt;/strong&gt; and &lt;strong&gt;Objection&lt;/strong&gt; for memory inspection.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-static-discovery-with-r2--nm&#34;&gt;1. Static Discovery with r2 / nm&lt;/h2&gt;&#xA;&lt;p&gt;Loaded the app binary into &lt;code&gt;r2&lt;/code&gt; and searched for symbols/functions containing the term &lt;strong&gt;&lt;code&gt;compliant&lt;/code&gt;&lt;/strong&gt;. That quickly pointed at the high-level check deciding whether the device is &amp;ldquo;noncompliant&amp;rdquo;.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

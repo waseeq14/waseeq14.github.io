@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Config-Editor on Waseeq Ur Rehman</title>
-    <link>http://localhost:1313/tags/config-editor/</link>
-    <description>Recent content in Config-Editor on Waseeq Ur Rehman</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/config-editor/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Unsafe YAML Deserialization to RCE on Android</title>
-      <link>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</link>
-      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</guid>
-      <description>Exploiting an unsafe SnakeYAML deserialization flow chained with a legacy command execution utility to achieve RCE on an Android app.</description>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Config-Editor on Waseeq Ur Rehman</title>
+		<link>http://localhost:1313/tags/config-editor/</link>
+		<description>Recent content in Config-Editor on Waseeq Ur Rehman</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/config-editor/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Unsafe YAML Deserialization to RCE on Android</title>
+				<link>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</link>
+				<pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/android-config-editor-snakeyaml-rce/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;Config Editor&lt;/strong&gt; Android challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - a static analysis puzzle that ends up being a lot more interesting than the UI suggests.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Target:&lt;/strong&gt; Mobile Hacking Lab - Config Editor (APK)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; During static analysis of the Config Editor APK, I discovered an unsafe YAML deserialization flow using the SnakeYAML library combined with a legacy command execution utility. This results in remote code execution on the device by deserializing attacker-controlled YAML that constructs and executes arbitrary Java commands.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

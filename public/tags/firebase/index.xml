@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Firebase on Waseeq Ur Rehman</title>
-    <link>http://localhost:1313/tags/firebase/</link>
-    <description>Recent content in Firebase on Waseeq Ur Rehman</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Client-Side Access Control is Not Access Control: Firestore Query Tampering via Frida</title>
-      <link>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</guid>
-      <description>Bypassing Frida detection in Notely AI and tampering with Firestore queries at runtime via ObjC method hooking to access archived admin notes.</description>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Firebase on Waseeq Ur Rehman</title>
+		<link>http://localhost:1313/tags/firebase/</link>
+		<description>Recent content in Firebase on Waseeq Ur Rehman</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Client-Side Access Control is Not Access Control: Firestore Query Tampering via Frida</title>
+				<link>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</link>
+				<pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/ios-notely-ai-firestore-bypass/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;Notely AI&lt;/strong&gt; iOS challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt;. The Frida detection bypass was quick, but getting past the admin check took a completely different approach than I expected.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;initial-check&#34;&gt;Initial Check&lt;/h2&gt;&#xA;&lt;p&gt;When opened on a jailbroken device with Frida installed, the app showed an alert: &lt;code&gt;Frida Framework Detected&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Searching for the string in r2:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;b17c7d6912af6c4102e1c34b01a11290.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cross-referencing it:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;1cf2a9dbcfe42ca6da6eda7e16ad3c30.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Found the responsible function at &lt;code&gt;sym.func.100006074&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;c057e4558216555fe0fa350e56cc9a90.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wrote a Frida script to replace it with a no-op:&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

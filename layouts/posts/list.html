@@ -114,12 +114,6 @@
 
     {{- $pages := union .Pages .Sections }}
 
-    {{- if .Site.Params.fuseOpts }}
-    <div id="searchbox">
-      <input id="searchInput" aria-label="Search" type="search" autocomplete="off" placeholder="Filter posts...">
-    </div>
-    {{- end }}
-
     {{- $paginator := .Paginate $pages }}
 
     {{- range $index, $page := $paginator.Pages }}

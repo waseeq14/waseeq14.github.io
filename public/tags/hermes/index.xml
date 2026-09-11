@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Hermes on Waseeq Ur Rehman</title>
+		<link>http://localhost:1313/tags/hermes/</link>
+		<description>Recent content in Hermes on Waseeq Ur Rehman</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/hermes/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Exploiting React Native Apps: A Hands-On Walkthrough with DVRN</title>
+				<link>http://localhost:1313/posts/react-native-pentesting-with-dvrn/</link>
+				<pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/react-native-pentesting-with-dvrn/</guid>
+				<description>&lt;p&gt;This is Part 2 of a two-part series on testing React Native applications. &lt;a href=&#34;http://localhost:1313/posts/react-native-pentesting-fundamentals/&#34;&gt;Part 1&lt;/a&gt; covered identifying an RN app, detecting its architecture and JS engine, and reading its bundle. This part puts all of that to use against DVRN, a deliberately vulnerable RN app I built specifically for this series, walking through five real vulnerabilities end to end.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;introducing-dvrn&#34;&gt;Introducing DVRN&lt;/h2&gt;&#xA;&lt;p&gt;DVRN (Damn Vulnerable React Native) is a deliberately vulnerable React Native app I built to have a real, hands-on target for the techniques covered in Part 1, rather than talking about them in the abstract.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Understanding React Native Apps: A Pentester&#39;s Field Guide</title>
+				<link>http://localhost:1313/posts/react-native-pentesting-fundamentals/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/react-native-pentesting-fundamentals/</guid>
+				<description>&lt;p&gt;This is Part 1 of a two-part series on testing React Native applications. This part covers what you need to know before you start testing- identifying an RN app, understanding how it&amp;rsquo;s actually built, and setting up the right recon workflow. Part 2 walks through exploiting five real vulnerabilities using DVRN, a deliberately vulnerable RN app I built specifically for this series.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-react-native-and-why-should-a-pentester-care&#34;&gt;What is React Native, and why should a pentester care&lt;/h2&gt;&#xA;&lt;p&gt;React Native lets you write mobile apps in JavaScript, using React, and ship them as genuinely native Android and iOS apps. That last part matters more than it sounds. Instead of compiling your code into a web browser wrapper like traditional hybrid apps, it communicates directly with the host platform - your &lt;code&gt;&amp;lt;View&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;Text&amp;gt;&lt;/code&gt; components become real &lt;code&gt;android.widget.*&lt;/code&gt; views on Android, not HTML rendered inside a WebView. The JS layer decides what to show and how to respond to events; the actual rendering is native.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

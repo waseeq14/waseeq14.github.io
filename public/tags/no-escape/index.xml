@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>No-Escape on Waseeq Ur Rehman</title>
-    <link>http://localhost:1313/tags/no-escape/</link>
-    <description>Recent content in No-Escape on Waseeq Ur Rehman</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 15 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/no-escape/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>One Hook to Bypass All: Defeating iOS Jailbreak Detection with Frida</title>
-      <link>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</link>
-      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</guid>
-      <description>Bypassing iOS jailbreak detection in No Escape by hooking the root isJailbroken() export with Frida, then using Objection to find the flag in memory.</description>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>No-Escape on Waseeq Ur Rehman</title>
+		<link>http://localhost:1313/tags/no-escape/</link>
+		<description>Recent content in No-Escape on Waseeq Ur Rehman</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 15 Nov 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/no-escape/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>One Hook to Bypass All: Defeating iOS Jailbreak Detection with Frida</title>
+				<link>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</link>
+				<pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/ios-no-escape-jailbreak-bypass/</guid>
+				<description>&lt;p&gt;This is my writeup for the &lt;strong&gt;No Escape&lt;/strong&gt; iOS challenge by &lt;a href=&#34;https://www.mobilehackinglab.com/&#34;&gt;Mobile Hacking Labs&lt;/a&gt; - a quick but clean jailbreak detection bypass that demonstrates how fragile single-function guards really are.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A simple jailbreak detection bypass challenge. I downloaded the IPA, extracted it, and analyzed the binary with radare2. A few jailbreak detection methods were found:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;210d29dbd6c038c006dcfa5228db52fa.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;All of them were called inside a single main detection function. I got its full mangled name using &lt;code&gt;nm&lt;/code&gt;:&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
