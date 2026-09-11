@@ -22,7 +22,7 @@ minify:
 params:
   env: production
   title: Waseeq Ur Rehman
-  description: "Security professional - penetration tester, researcher, and writer."
+  description: "Cybersecurity professional - penetration tester, researcher, and writer."
   author: Waseeq Ur Rehman
   defaultTheme: dark
   disableThemeToggle: false
@@ -46,7 +46,7 @@ params:
   profileMode:
     enabled: true
     title: "Waseeq Ur Rehman"
-    subtitle: "Security professional. I break stuff, sometimes fix it, and occasionally write about both."
+    subtitle: "Cybersecurity professional. I break stuff, sometimes fix it, and occasionally write about both."
     imageUrl: "/images/avatar.png"
     imageWidth: 160
     imageHeight: 160
