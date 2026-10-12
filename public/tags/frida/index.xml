@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/tags/frida/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>DVRN - Damn Vulnerable React Native</title>
+				<link>http://localhost:1313/projects/dvrn-damn-vulnerable-react-native/</link>
+				<pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/dvrn-damn-vulnerable-react-native/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/waseeq14/Damn-Vulnerable-React-Native&#34;&gt;github.com/waseeq14/Damn-Vulnerable-React-Native&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Blog series:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Part 1 - &lt;a href=&#34;http://localhost:1313/posts/react-native-pentesting-fundamentals/&#34;&gt;Understanding React Native Apps: A Pentester&amp;rsquo;s Field Guide&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Part 2 - &lt;a href=&#34;http://localhost:1313/posts/react-native-pentesting-with-dvrn/&#34;&gt;Exploiting React Native Apps: A Hands-On Walkthrough with DVRN&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;DVRN (Damn Vulnerable React Native) is a deliberately vulnerable mobile app I built to have a real, hands-on target for teaching React Native-specific security testing — not generic mobile hardening checks any Android or iOS app could have, but bugs that are either unique to how React Native itself is built, or meaningfully different to exploit because of its architecture.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Exploiting React Native Apps: A Hands-On Walkthrough with DVRN</title>
 				<link>http://localhost:1313/posts/react-native-pentesting-with-dvrn/</link>

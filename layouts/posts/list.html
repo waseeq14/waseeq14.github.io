@@ -6,22 +6,32 @@
     <nav class="sidebar-nav">
       <div class="sidebar-header">~/posts</div>
 
-      {{/* ── Writeups ── */}}
+      {{/* ── Category queries ── */}}
       {{- $mhl := where .Pages "Params.categories" "intersect" (slice "Writeups") }}
       {{- $androidWriteups := where $mhl "Params.tags" "intersect" (slice "android") }}
       {{- $iosWriteups := where $mhl "Params.tags" "intersect" (slice "ios") }}
+      {{- $dvrn := where .Pages "Params.categories" "intersect" (slice "DVRN") }}
+      {{- $androidDirect := where .Pages "Params.categories" "intersect" (slice "Android") }}
+      {{- $iosDirect := where .Pages "Params.categories" "intersect" (slice "iOS") }}
 
-      {{- if $mhl }}
+      {{/* ── Android ── */}}
+      {{- if or $androidWriteups $dvrn $androidDirect }}
       <div class="sidebar-section" data-open="true">
         <button class="sidebar-toggle" aria-expanded="true">
-          <span class="toggle-icon">▾</span> Writeups/
+          <span class="toggle-icon">▾</span> Android/
         </button>
         <div class="sidebar-children">
-          {{/* Android */}}
+          {{/* Direct posts (no sub-folder) */}}
+          {{- range $androidDirect.ByDate.Reverse }}
+          <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+            <span class="sidebar-file">{{ .Title }}</span>
+          </a>
+          {{- end }}
+          {{/* Mobile Hacking Labs */}}
           {{- if $androidWriteups }}
           <div class="sidebar-section" data-open="true">
             <button class="sidebar-toggle sub" aria-expanded="true">
-              <span class="toggle-icon">▾</span> Android/
+              <span class="toggle-icon">▾</span> Mobile Hacking Labs/
             </button>
             <div class="sidebar-children">
               {{- range $androidWriteups.ByDate.Reverse }}
@@ -32,14 +42,14 @@
             </div>
           </div>
           {{- end }}
-          {{/* iOS */}}
-          {{- if $iosWriteups }}
+          {{/* DVRN */}}
+          {{- if $dvrn }}
           <div class="sidebar-section" data-open="true">
             <button class="sidebar-toggle sub" aria-expanded="true">
-              <span class="toggle-icon">▾</span> iOS/
+              <span class="toggle-icon">▾</span> DVRN/
             </button>
             <div class="sidebar-children">
-              {{- range $iosWriteups.ByDate.Reverse }}
+              {{- range $dvrn.ByDate }}
               <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
                 <span class="sidebar-file">{{ .Title }}</span>
               </a>
@@ -51,18 +61,33 @@
       </div>
       {{- end }}
 
-      {{/* ── DVRN (Mobile Security Research) ── */}}
-      {{- $dvrn := where .Pages "Params.categories" "intersect" (slice "DVRN") }}
-      {{- if $dvrn }}
+      {{/* ── iOS ── */}}
+      {{- if or $iosWriteups $iosDirect }}
       <div class="sidebar-section" data-open="true">
         <button class="sidebar-toggle" aria-expanded="true">
-          <span class="toggle-icon">▾</span> DVRN/
+          <span class="toggle-icon">▾</span> iOS/
         </button>
         <div class="sidebar-children">
-          {{- range $dvrn.ByDate }}
+          {{/* Direct posts (no sub-folder) */}}
+          {{- range $iosDirect.ByDate.Reverse }}
           <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
             <span class="sidebar-file">{{ .Title }}</span>
           </a>
+          {{- end }}
+          {{/* Mobile Hacking Labs */}}
+          {{- if $iosWriteups }}
+          <div class="sidebar-section" data-open="true">
+            <button class="sidebar-toggle sub" aria-expanded="true">
+              <span class="toggle-icon">▾</span> Mobile Hacking Labs/
+            </button>
+            <div class="sidebar-children">
+              {{- range $iosWriteups.ByDate.Reverse }}
+              <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+                <span class="sidebar-file">{{ .Title }}</span>
+              </a>
+              {{- end }}
+            </div>
+          </div>
           {{- end }}
         </div>
       </div>

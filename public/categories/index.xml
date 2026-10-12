@@ -14,24 +14,24 @@
 		
 			<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>Mobile Security Research</title>
-				<link>http://localhost:1313/categories/mobile-security-research/</link>
+				<title>DVRN</title>
+				<link>http://localhost:1313/categories/dvrn/</link>
 				<pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/categories/mobile-security-research/</guid>
+				<guid>http://localhost:1313/categories/dvrn/</guid>
 				<description></description>
 			</item>
 			<item>
-				<title>Projects</title>
-				<link>http://localhost:1313/categories/projects/</link>
+				<title>DevSecOps</title>
+				<link>http://localhost:1313/categories/devsecops/</link>
 				<pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/categories/projects/</guid>
+				<guid>http://localhost:1313/categories/devsecops/</guid>
 				<description></description>
 			</item>
 			<item>
-				<title>Mobile Hacking Labs</title>
-				<link>http://localhost:1313/categories/mobile-hacking-labs/</link>
+				<title>Writeups</title>
+				<link>http://localhost:1313/categories/writeups/</link>
 				<pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/categories/mobile-hacking-labs/</guid>
+				<guid>http://localhost:1313/categories/writeups/</guid>
 				<description></description>
 			</item>
 	</channel>

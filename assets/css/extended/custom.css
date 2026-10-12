@@ -225,11 +225,12 @@ h1.post-title,
 .post-title a,
 h1.post-title,
 .entry-header h2 a {
+  color: var(--purple-light);
   transition: color var(--transition);
 }
 
 .entry-header h2 a:hover {
-  color: var(--purple-light);
+  color: var(--purple);
 }
 
 /* ── Tags / chips ───────────────────────────────────────────────────── */
