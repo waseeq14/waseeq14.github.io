@@ -1,1 +1,10 @@
+# Claude Code
 .claude
+
+# macOS
+.DS_Store
+
+# Hugo build output (rebuilt by CI on deploy)
+/public/
+/resources/
+.hugo_build.lock
