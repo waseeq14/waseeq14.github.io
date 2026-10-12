@@ -10,7 +10,7 @@
 # ─────────────────────────────────────────────────────────────────────
 
 title: "My New Post Title"            # Shown as the heading + sidebar label
-date: 2026-02-15                      # Controls order (newest first). Future dates are hidden.
+date: 2026-01-01                      # ⬅ CHANGE ME to the real publish date. Order = newest first; future dates are hidden.
 draft: true                          # ⬅ set to FALSE in your real post to publish
 
 # ── PLACEMENT — this is what decides the sidebar heading. ──

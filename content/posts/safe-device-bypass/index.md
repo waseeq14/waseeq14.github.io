@@ -1,7 +1,7 @@
 ---
 
 title: "Bypassing Flutter's safe_device Plugin"
-date: 2026-02-15              
+date: 2026-10-12
 draft: false
 
 categories: ["Android"]

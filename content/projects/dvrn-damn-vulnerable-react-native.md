@@ -1,6 +1,6 @@
 ---
 title: "DVRN - Damn Vulnerable React Native"
-date: 2026-02-10
+date: 2026-09-11
 draft: false
 tags:
   [
