@@ -71,7 +71,7 @@ It found the Flutter library but the byte pattern didn't match. The function com
 reFlutter patches the Flutter framework binary statically and repackages the IPA. It maintains a database of pre-built patched binaries keyed by engine snapshot hash.
 
 ```bash
-reflutter "WeCare Health 2.ipa"
+reflutter "test.ipa"
 ```
 
 Output:
