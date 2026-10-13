@@ -1,6 +1,6 @@
 ---
 
-title: "Intercepting Flutter iOS Traffic When Every Tool Fails"
+title: "Bypassing Flutter TLS on iOS Without Pattern Matching"
 date: 2026-10-13
 draft: false
 
