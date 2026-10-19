@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 492" role="img" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title>How talsecStart is registered and dispatched in React Native on iOS</title>
+<desc>Dashed arrows show build-time registration: FreeraspReactNative.m generates the RN bridge metadata, FreeraspReactNative.swift registers into the ObjC runtime method list. Solid arrows show the runtime call: talsecStart(cfg) flows from JavaScript through the bridge metadata, to the method list selector talsecStart:withResolver:withRejecter:, then to Talsec.start engine ignition.</desc>
+<style>
+  :root{
+    --mono:'SFMono-Regular', ui-monospace, Menlo, Consolas, monospace;
+    --text:#3d3d3a; --muted:#73726c;
+    --g-f:#F1EFE8; --g-s:#5F5E5A; --g-t:#2C2C2A;
+    --te-f:#E1F5EE; --te-s:#0F6E56; --te-t:#085041;
+    --bl-f:#E6F1FB; --bl-s:#185FA5; --bl-t:#0C447C;
+    --co-f:#FAECE7; --co-s:#993C1D; --co-t:#712B13;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --text:#c2c0b6; --muted:#9c9a92;
+      --g-f:#444441; --g-s:#B4B2A9; --g-t:#D3D1C7;
+      --te-f:#085041; --te-s:#5DCAA5; --te-t:#9FE1CB;
+      --bl-f:#0C447C; --bl-s:#85B7EB; --bl-t:#B5D4F4;
+      --co-f:#712B13; --co-s:#F0997B; --co-t:#F5C4B3;
+    }
+  }
+  .th{font-size:14px;font-weight:500}
+  .ts{font-size:12px;font-weight:400}
+  .mono{font-family:var(--mono)}
+  .arr{stroke:var(--text);stroke-width:1.5;fill:none}
+  .dash{stroke:var(--muted);stroke-width:1;stroke-dasharray:4 3;fill:none}
+</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<rect x="70" y="40" width="300" height="56" rx="8" fill="var(--g-f)" stroke="var(--g-s)" stroke-width="1"/>
+<text class="th" fill="var(--g-t)" x="220" y="58" text-anchor="middle" dominant-baseline="central">JavaScript call</text>
+<text class="ts mono" fill="var(--g-t)" x="220" y="78" text-anchor="middle" dominant-baseline="central">talsecStart(cfg)</text>
+
+<line class="arr" x1="220" y1="96" x2="220" y2="138" marker-end="url(#arrow)"/>
+<text class="ts" fill="var(--text)" x="235" y="117" text-anchor="start" dominant-baseline="central">call enters the bridge</text>
+
+<rect x="70" y="140" width="300" height="64" rx="8" fill="var(--te-f)" stroke="var(--te-s)" stroke-width="1"/>
+<text class="th" fill="var(--te-t)" x="220" y="164" text-anchor="middle" dominant-baseline="central">RN bridge metadata</text>
+<text class="ts" fill="var(--te-t)" x="220" y="188" text-anchor="middle" dominant-baseline="central">resolves selector from JS name</text>
+
+<line class="arr" x1="220" y1="204" x2="220" y2="246" marker-end="url(#arrow)"/>
+<text class="ts" fill="var(--text)" x="235" y="225" text-anchor="start" dominant-baseline="central">resolved selector</text>
+
+<rect x="70" y="248" width="300" height="64" rx="8" fill="var(--bl-f)" stroke="var(--bl-s)" stroke-width="1"/>
+<text class="th" fill="var(--bl-t)" x="220" y="272" text-anchor="middle" dominant-baseline="central">ObjC runtime method list</text>
+<text class="ts mono" fill="var(--bl-t)" x="220" y="296" text-anchor="middle" dominant-baseline="central">talsecStart:withResolver:withRejecter:</text>
+
+<line class="arr" x1="220" y1="312" x2="220" y2="354" marker-end="url(#arrow)"/>
+<text class="ts" fill="var(--text)" x="235" y="333" text-anchor="start" dominant-baseline="central">runs talsecStart body</text>
+
+<rect x="70" y="356" width="300" height="64" rx="8" fill="var(--g-f)" stroke="var(--g-s)" stroke-width="1"/>
+<text class="th" fill="var(--g-t)" x="220" y="380" text-anchor="middle" dominant-baseline="central">Talsec.start()</text>
+<text class="ts" fill="var(--g-t)" x="220" y="404" text-anchor="middle" dominant-baseline="central">engine ignition · closed TalsecRuntime</text>
+
+<rect x="430" y="140" width="210" height="64" rx="8" fill="var(--co-f)" stroke="var(--co-s)" stroke-width="1"/>
+<text class="th" fill="var(--co-t)" x="535" y="164" text-anchor="middle" dominant-baseline="central">FreeraspReactNative.m</text>
+<text class="ts mono" fill="var(--co-t)" x="535" y="188" text-anchor="middle" dominant-baseline="central">RCT_EXTERN_METHOD(…)</text>
+
+<rect x="430" y="248" width="210" height="64" rx="8" fill="var(--co-f)" stroke="var(--co-s)" stroke-width="1"/>
+<text class="th" fill="var(--co-t)" x="535" y="272" text-anchor="middle" dominant-baseline="central">FreeraspReactNative.swift</text>
+<text class="ts mono" fill="var(--co-t)" x="535" y="296" text-anchor="middle" dominant-baseline="central">@objc(talsecStart:…)</text>
+
+<line class="dash" x1="428" y1="172" x2="372" y2="172" marker-end="url(#arrow)"/>
+<text class="ts" fill="var(--muted)" x="378" y="160" text-anchor="start" dominant-baseline="central">generates</text>
+
+<line class="dash" x1="428" y1="280" x2="372" y2="280" marker-end="url(#arrow)"/>
+<text class="ts" fill="var(--muted)" x="378" y="268" text-anchor="start" dominant-baseline="central">registers</text>
+
+<text class="ts" fill="var(--muted)" x="340" y="450" text-anchor="middle" dominant-baseline="central">dashed = registered at build time · solid = a live call</text>
+<text class="ts" fill="var(--muted)" x="340" y="474" text-anchor="middle" dominant-baseline="central" opacity="0.8">waseeq14.github.io</text>
+</svg>
