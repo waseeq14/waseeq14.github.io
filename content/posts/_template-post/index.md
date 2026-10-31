@@ -9,22 +9,14 @@
 # false in YOUR copy when you're ready to go live.
 # ─────────────────────────────────────────────────────────────────────
 
-title: "My New Post Title"            # Shown as the heading + sidebar label
-date: 2026-01-01                      # ⬅ CHANGE ME to the real publish date. Order = newest first; future dates are hidden.
-draft: true                          # ⬅ set to FALSE in your real post to publish
-
-# ── PLACEMENT — this is what decides the sidebar heading. ──
-# Android → Mobile Hacking Labs/ :  categories ["Writeups"]  + tag "android"
-# iOS     → Mobile Hacking Labs/ :  categories ["Writeups"]  + tag "ios"
-# Android → DVRN/                :  categories ["DVRN"]
-# DevSecOps/                     :  categories ["DevSecOps"]
-# (A category not listed in layouts/posts/list.html = post still lives at
-#  its URL and on the main list, but shows NO sidebar heading.)
+title: "My New Post Title" # Shown as the heading + sidebar label
+date: 2026-01-01 # ⬅ CHANGE ME to the real publish date. Order = newest first; future dates are hidden.
+draft: true # ⬅ set to FALSE in your real post to publish
 categories: ["Writeups"]
-tags: ["android", "frida"]           # tag "android"/"ios" also drives the MHL bucket
+tags: ["android", "frida"] # tag "android"/"ios" also drives the MHL bucket
 
 description: "One-line summary shown on the posts-list card and in meta tags."
-showToc: true                        # table of contents in the left sidebar on the post page
+showToc: true # table of contents in the left sidebar on the post page
 ---
 
 Intro paragraph. Say what the target is and what you're going to do.
