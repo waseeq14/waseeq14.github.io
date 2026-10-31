@@ -13,46 +13,92 @@
       {{- $dvrn := where .Pages "Params.categories" "intersect" (slice "DVRN") }}
       {{- $androidDirect := where .Pages "Params.categories" "intersect" (slice "Android") }}
       {{- $iosDirect := where .Pages "Params.categories" "intersect" (slice "iOS") }}
+      {{- $azureDirect := where .Pages "Params.categories" "intersect" (slice "Azure") }}
+      {{- $awsDirect := where .Pages "Params.categories" "intersect" (slice "AWS") }}
+      {{- $pwnedLabs := where .Pages "Params.categories" "intersect" (slice "Pwned Labs") }}
+      {{- $azurePwnedLabs := where $pwnedLabs "Params.tags" "intersect" (slice "azure") }}
+      {{- $awsPwnedLabs := where $pwnedLabs "Params.tags" "intersect" (slice "aws") }}
 
-      {{/* ── Android ── */}}
-      {{- if or $androidWriteups $dvrn $androidDirect }}
+      {{/* ── Mobile Security ── */}}
+      {{- if or $androidWriteups $dvrn $androidDirect $iosWriteups $iosDirect }}
       <div class="sidebar-section" data-open="true">
         <button class="sidebar-toggle" aria-expanded="true">
-          <span class="toggle-icon">▾</span> Android/
+          <span class="toggle-icon">▾</span> Mobile Security/
         </button>
         <div class="sidebar-children">
-          {{/* Direct posts (no sub-folder) */}}
-          {{- range $androidDirect.ByDate.Reverse }}
-          <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
-            <span class="sidebar-file">{{ .Title }}</span>
-          </a>
-          {{- end }}
-          {{/* Mobile Hacking Labs */}}
-          {{- if $androidWriteups }}
+          {{/* Android */}}
+          {{- if or $androidWriteups $dvrn $androidDirect }}
           <div class="sidebar-section" data-open="true">
             <button class="sidebar-toggle sub" aria-expanded="true">
-              <span class="toggle-icon">▾</span> Mobile Hacking Labs/
+              <span class="toggle-icon">▾</span> Android/
             </button>
             <div class="sidebar-children">
-              {{- range $androidWriteups.ByDate.Reverse }}
+              {{/* Direct posts (no sub-folder) */}}
+              {{- range $androidDirect.ByDate.Reverse }}
               <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
                 <span class="sidebar-file">{{ .Title }}</span>
               </a>
               {{- end }}
+              {{/* Mobile Hacking Labs */}}
+              {{- if $androidWriteups }}
+              <div class="sidebar-section" data-open="true">
+                <button class="sidebar-toggle sub" aria-expanded="true">
+                  <span class="toggle-icon">▾</span> Mobile Hacking Labs/
+                </button>
+                <div class="sidebar-children">
+                  {{- range $androidWriteups.ByDate.Reverse }}
+                  <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+                    <span class="sidebar-file">{{ .Title }}</span>
+                  </a>
+                  {{- end }}
+                </div>
+              </div>
+              {{- end }}
+              {{/* DVRN */}}
+              {{- if $dvrn }}
+              <div class="sidebar-section" data-open="true">
+                <button class="sidebar-toggle sub" aria-expanded="true">
+                  <span class="toggle-icon">▾</span> DVRN/
+                </button>
+                <div class="sidebar-children">
+                  {{- range $dvrn.ByDate }}
+                  <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+                    <span class="sidebar-file">{{ .Title }}</span>
+                  </a>
+                  {{- end }}
+                </div>
+              </div>
+              {{- end }}
             </div>
           </div>
           {{- end }}
-          {{/* DVRN */}}
-          {{- if $dvrn }}
+          {{/* iOS */}}
+          {{- if or $iosWriteups $iosDirect }}
           <div class="sidebar-section" data-open="true">
             <button class="sidebar-toggle sub" aria-expanded="true">
-              <span class="toggle-icon">▾</span> DVRN/
+              <span class="toggle-icon">▾</span> iOS/
             </button>
             <div class="sidebar-children">
-              {{- range $dvrn.ByDate }}
+              {{/* Direct posts (no sub-folder) */}}
+              {{- range $iosDirect.ByDate.Reverse }}
               <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
                 <span class="sidebar-file">{{ .Title }}</span>
               </a>
+              {{- end }}
+              {{/* Mobile Hacking Labs */}}
+              {{- if $iosWriteups }}
+              <div class="sidebar-section" data-open="true">
+                <button class="sidebar-toggle sub" aria-expanded="true">
+                  <span class="toggle-icon">▾</span> Mobile Hacking Labs/
+                </button>
+                <div class="sidebar-children">
+                  {{- range $iosWriteups.ByDate.Reverse }}
+                  <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+                    <span class="sidebar-file">{{ .Title }}</span>
+                  </a>
+                  {{- end }}
+                </div>
+              </div>
               {{- end }}
             </div>
           </div>
@@ -61,30 +107,71 @@
       </div>
       {{- end }}
 
-      {{/* ── iOS ── */}}
-      {{- if or $iosWriteups $iosDirect }}
+      {{/* ── Cloud Security ── */}}
+      {{- if or $azureDirect $azurePwnedLabs $awsDirect $awsPwnedLabs }}
       <div class="sidebar-section" data-open="true">
         <button class="sidebar-toggle" aria-expanded="true">
-          <span class="toggle-icon">▾</span> iOS/
+          <span class="toggle-icon">▾</span> Cloud Security/
         </button>
         <div class="sidebar-children">
-          {{/* Direct posts (no sub-folder) */}}
-          {{- range $iosDirect.ByDate.Reverse }}
-          <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
-            <span class="sidebar-file">{{ .Title }}</span>
-          </a>
-          {{- end }}
-          {{/* Mobile Hacking Labs */}}
-          {{- if $iosWriteups }}
+          {{/* Azure */}}
+          {{- if or $azureDirect $azurePwnedLabs }}
           <div class="sidebar-section" data-open="true">
             <button class="sidebar-toggle sub" aria-expanded="true">
-              <span class="toggle-icon">▾</span> Mobile Hacking Labs/
+              <span class="toggle-icon">▾</span> Azure/
             </button>
             <div class="sidebar-children">
-              {{- range $iosWriteups.ByDate.Reverse }}
+              {{/* Direct posts (no sub-folder) */}}
+              {{- range $azureDirect.ByDate.Reverse }}
               <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
                 <span class="sidebar-file">{{ .Title }}</span>
               </a>
+              {{- end }}
+              {{/* Pwned Labs */}}
+              {{- if $azurePwnedLabs }}
+              <div class="sidebar-section" data-open="true">
+                <button class="sidebar-toggle sub" aria-expanded="true">
+                  <span class="toggle-icon">▾</span> Pwned Labs/
+                </button>
+                <div class="sidebar-children">
+                  {{- range $azurePwnedLabs.ByDate.Reverse }}
+                  <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+                    <span class="sidebar-file">{{ .Title }}</span>
+                  </a>
+                  {{- end }}
+                </div>
+              </div>
+              {{- end }}
+            </div>
+          </div>
+          {{- end }}
+          {{/* AWS */}}
+          {{- if or $awsDirect $awsPwnedLabs }}
+          <div class="sidebar-section" data-open="true">
+            <button class="sidebar-toggle sub" aria-expanded="true">
+              <span class="toggle-icon">▾</span> AWS/
+            </button>
+            <div class="sidebar-children">
+              {{/* Direct posts (no sub-folder) */}}
+              {{- range $awsDirect.ByDate.Reverse }}
+              <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+                <span class="sidebar-file">{{ .Title }}</span>
+              </a>
+              {{- end }}
+              {{/* Pwned Labs */}}
+              {{- if $awsPwnedLabs }}
+              <div class="sidebar-section" data-open="true">
+                <button class="sidebar-toggle sub" aria-expanded="true">
+                  <span class="toggle-icon">▾</span> Pwned Labs/
+                </button>
+                <div class="sidebar-children">
+                  {{- range $awsPwnedLabs.ByDate.Reverse }}
+                  <a class="sidebar-link" href="{{ .Permalink }}" title="{{ .Title }}">
+                    <span class="sidebar-file">{{ .Title }}</span>
+                  </a>
+                  {{- end }}
+                </div>
+              </div>
               {{- end }}
             </div>
           </div>

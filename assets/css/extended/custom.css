@@ -408,6 +408,17 @@ h1.post-title,
   border-left-color: var(--purple);
 }
 
+/* ── Active heading (scroll-spy) ────────────────────────────────────────
+   Toggled by JS in layouts/_default/single.html as the reader scrolls
+   past each heading in the article. ── */
+.toc-sidebar-inner #TableOfContents a.active {
+  background:        var(--purple-glow);
+  color:             var(--purple-light);
+  font-weight:       600;
+  padding-left:      0.7rem;
+  border-left-color: var(--purple);
+}
+
 /* ── Hide the old inline ToC (PaperMod default <details>) ─────────────── */
 .post-single > details.toc {
   display: none;
@@ -537,7 +548,6 @@ nav#menu ul li {
 .sidebar-toggle.sub {
   font-size:   0.84rem;
   font-weight: 500;
-  padding-left: 1.2rem;
 }
 
 .toggle-icon {
@@ -548,10 +558,17 @@ nav#menu ul li {
   transition: transform var(--transition);
 }
 
-/* ── Collapsible children ──────────────────────────────────────────── */
+/* ── Collapsible children ─────────────────────────────────────────────
+   Each nesting level gets its own indent + vertical guide line (like a
+   VS Code tree view). Since .sidebar-children wraps nested
+   .sidebar-section blocks, these values compound automatically at any
+   depth instead of needing a hardcoded padding override per level. ── */
 .sidebar-children {
-  overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.2s ease;
+  overflow:    hidden;
+  margin-left: 0.6rem;
+  padding-left: 0.6rem;
+  border-left: 1px solid var(--purple-glow);
+  transition:  max-height 0.3s ease, opacity 0.2s ease, border-color var(--transition);
 }
 
 .sidebar-section[data-open="true"] > .sidebar-children {
@@ -564,10 +581,14 @@ nav#menu ul li {
   opacity:    0;
 }
 
+.sidebar-children:hover {
+  border-color: var(--purple-dark);
+}
+
 /* ── Post links (leaf nodes) ───────────────────────────────────────── */
 .sidebar-link {
   display:       block;
-  padding:       0.3rem 0.5rem 0.3rem 2rem;
+  padding:       0.3rem 0.5rem 0.3rem 0.6rem;
   color:         var(--secondary);
   font-size:     0.8rem;
   line-height:   1.4;
@@ -581,7 +602,7 @@ nav#menu ul li {
 .sidebar-link:hover {
   background:    var(--purple-glow);
   color:         var(--purple-light);
-  padding-left:  2.2rem;
+  padding-left:  0.8rem;
   border-left-color: var(--purple);
 }
 
@@ -590,15 +611,6 @@ nav#menu ul li {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow:           hidden;
-}
-
-/* ── Nested sub-sections get deeper indent ─────────────────────────── */
-.sidebar-section .sidebar-section .sidebar-link {
-  padding-left: 2.6rem;
-}
-
-.sidebar-section .sidebar-section .sidebar-link:hover {
-  padding-left: 2.8rem;
 }
 
 /* ── Responsive: hide sidebar on smaller screens ───────────────────── */

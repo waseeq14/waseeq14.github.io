@@ -20,6 +20,61 @@
       </div>
     </nav>
   </aside>
+
+  {{/* ── ToC scroll-spy: highlight the heading currently in view ──────── */}}
+  <script>
+  (function () {
+    function init() {
+      var pairs = Array.prototype.slice.call(document.querySelectorAll('.toc-sidebar-inner a[href^="#"]'))
+        .map(function (link) {
+          var id = decodeURIComponent(link.getAttribute('href').slice(1));
+          return { link: link, heading: document.getElementById(id) };
+        })
+        .filter(function (p) { return p.heading; });
+
+      if (!pairs.length) return;
+
+      var activeLink = null;
+      function setActive(link) {
+        if (activeLink === link) return;
+        if (activeLink) activeLink.classList.remove('active');
+        activeLink = link;
+        if (activeLink) activeLink.classList.add('active');
+      }
+
+      var OFFSET = 90; // px from top of viewport before a heading counts as "reached"
+      function onScroll() {
+        var current = pairs[0].link;
+        for (var i = 0; i < pairs.length; i++) {
+          if (pairs[i].heading.getBoundingClientRect().top - OFFSET <= 0) {
+            current = pairs[i].link;
+          } else {
+            break;
+          }
+        }
+        setActive(current);
+      }
+
+      var ticking = false;
+      window.addEventListener('scroll', function () {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(function () {
+          onScroll();
+          ticking = false;
+        });
+      }, { passive: true });
+
+      onScroll();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+  </script>
   {{- end }}
 
   {{/* ── Main article ────────────────────────────────────────────────── */}}
