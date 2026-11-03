@@ -1,7 +1,7 @@
 ---
 title: "Stealing a Managed Identity to Reach a Hidden Function App (Then SQLi-ing It)"
 date: 2026-11-03
-draft: true
+draft: false
 categories: ["Pwned Labs"]
 tags: ["azure"]
 description: "My writeup for Pwned Labs' 'Exploit SQL Injection in Azure Function App' - turning code execution on a web app into a stolen managed identity token, using it to discover a resource group my user couldn't see, and SQL-injecting the Function App hiding inside it."
