@@ -1,7 +1,7 @@
 ---
 title: "Passwordless Credentials for Access and Escalation"
 date: 2026-11-04
-draft: true
+draft: false
 categories: ["Pwned Labs"]
 tags: ["azure"]
 description: "Going from a public domain name to a CEO's Key Vault secrets by abusing a leaked service principal certificate, a managed identity, and AU-scoped directory roles."
@@ -63,7 +63,7 @@ A `.pfx` just sitting in a public blob is a gift. That is a certificate, and in 
 
 ![openssl x509 output showing subject and issuer CN=HrPortal with a 2099 expiry](7.png)
 
-The certificate tells me *what* app it belongs to by name (HrPortal), but to actually log in I need that app's client ID. That is exactly what the other leaked file is for. I grepped `ApplicationIDs.csv` and there it was: `HrPortal` mapped to its AppId.
+The certificate tells me _what_ app it belongs to by name (HrPortal), but to actually log in I need that app's client ID. That is exactly what the other leaked file is for. I grepped `ApplicationIDs.csv` and there it was: `HrPortal` mapped to its AppId.
 
 ![ApplicationIDs.csv contents with the HrPortal app mapped to its AppId](8.png)
 
@@ -95,11 +95,11 @@ I pulled the publishing credentials with `az webapp deployment list-publishing-c
 
 ![Publishing credentials retrieved and a printenv run through the Kudu command API](12.png)
 
-Here is the catch though. On Linux App Service, Kudu runs in a *separate container* from your actual application. So when I grepped the Kudu environment for the identity variables, they were not there.
+Here is the catch though. On Linux App Service, Kudu runs in a _separate container_ from your actual application. So when I grepped the Kudu environment for the identity variables, they were not there.
 
 ![printenv in the Kudu container grepped for identity returning nothing](13.png)
 
-The managed identity environment variables (`IDENTITY_ENDPOINT` and `IDENTITY_HEADER`) only live in the app container, where the site code runs. So to steal the MI token I needed code running in *that* container, not Kudu. The app is PHP, so I wrote a tiny PHP file that reads those two env vars and calls the local identity endpoint:
+The managed identity environment variables (`IDENTITY_ENDPOINT` and `IDENTITY_HEADER`) only live in the app container, where the site code runs. So to steal the MI token I needed code running in _that_ container, not Kudu. The app is PHP, so I wrote a tiny PHP file that reads those two env vars and calls the local identity endpoint:
 
 ```php
 <?php
