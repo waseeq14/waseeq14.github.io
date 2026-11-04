@@ -6,7 +6,7 @@ url: "/about/"
 
 <div class="about-page">
 
-I'm Waseeq Ur Rehman, based in Islamabad, Pakistan. I am a Cybersecurity student, a football enthusiast (<span class="blaugrana">Blaugrana</span> blood) and a gamer. In CTFs I compete as **Gus Fring**, mostly with teams **PsychoTherapist** and **Akatsuki**.
+I'm Waseeq Ur Rehman, based in Islamabad, Pakistan. I am a Cybersecurity professional, a football enthusiast (<span class="blaugrana">Blaugrana</span> blood) and a gamer. In CTFs I compete as **Gus Fring**, mostly with teams **PsychoTherapist** and **Akatsuki**.
 
 ---
 
